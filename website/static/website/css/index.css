@@ -23,7 +23,25 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: var(--white);
 }
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--btn-bkg);
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: var(--btn-bkg-hover);
+}
 .container85{
     width: 85%;
 }
@@ -60,10 +78,9 @@ body{
 
 /* tags */
 
-h1{
-    /* font-size: 3.8rem;
-    line-height: 4.2rem; */
+h1, h2{
     font-weight: 800;
+    line-height: 120%;
 }
 
 button{
@@ -144,11 +161,12 @@ model-viewer {
 }
 
 #room-svg svg{
-    width: 90%;
+    width: 100%;
 }
 #room-svg svg .float-animation{
     animation: float 4s ease-in-out alternate infinite;
 }
+
 
 @keyframes float{
     0%{
@@ -159,7 +177,24 @@ model-viewer {
     }
 
 }
+#section-2{
+    background: url('../assets/section-2-bkg.png') no-repeat center center;
+}
 
+.heading h2{
+    position: relative;
+    display: inline;
+}
+.heading h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 75%;
+    height: 3px;
+    background: var(--border);
+    border-radius: 0 3px 0 0;
+}
 
 @media(max-width:1364px){
     nav li, nav button {
@@ -181,8 +216,9 @@ model-viewer {
     }
 }
 @media(max-width:992px){
-    #hero-section{
+    *{
         text-align: center;
+        font-size: 0.9rem;
     }
     nav#web-navbar{
         display: none;
@@ -194,6 +230,11 @@ model-viewer {
     }
     .gp-btns{
         justify-content: center;
+    }
+    .heading h2::before{
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 3px 3px 0 0;
     }
     
     
@@ -208,11 +249,11 @@ model-viewer {
     }
 }
 
-@media(min-width:993px){
+/* @media(min-width:993px){
     #hero-section{
         height: 80vh;
     }
-}
+} */
 
 /* #hero-section{
     height: 120vh;
