@@ -106,16 +106,16 @@ a{
 .primary-btn-gp{
     padding: 14px 20px;
     border-radius: 10px;
-    background: url('../assets/btn.svg') no-repeat center center;
+    background: url("../assets/btn.60405755c459.svg") no-repeat center center;
     box-shadow: var(--btn-shadow);
     border: none;
     transition: 0.5s all ease-in-out;
 }
 .primary-btn-gp:hover, .primary-btn-gp:focus{
-    background: url('../assets/btn-hov.svg') no-repeat center center;
+    background: url("../assets/btn-hov.45da5ae23e35.svg") no-repeat center center;
 }
 .stroke-btn{
-    background: url('../assets/btn.svg') no-repeat center center;
+    background: url("../assets/btn.60405755c459.svg") no-repeat center center;
     padding: 2px;
     border-radius: 10px;
     transition: 0.5s all ease-in-out;
@@ -126,7 +126,7 @@ a{
     border-radius: 7px;
 }
 .stroke-btn:hover, .stroke-btn:focus{
-    background: url('../assets/btn-hov.svg') no-repeat center center;
+    background: url("../assets/btn-hov.45da5ae23e35.svg") no-repeat center center;
 }
 
 #lang-dropdown{
@@ -189,7 +189,7 @@ model-viewer {
 
 }
 #section-2{
-    background: url('../assets/section-2-bkg.png') no-repeat center center;
+    background: url("../assets/section-2-bkg.f0bddca1c94d.png") no-repeat center center;
 }
 
 .heading h2{

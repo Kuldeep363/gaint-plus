@@ -8,9 +8,14 @@ https://docs.djangoproject.com/en/4.0/howto/deployment/asgi/
 """
 
 import os
+import sys
 
-from django.core.asgi import get_asgi_application
+path = '/home/figmavibes/gaint-plus'
+if path not in sys.path:
+    sys.path.insert(0,path)
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gaint_plus.settings')
+from django.core.wsgi import get_wsgi_application
 
-application = get_asgi_application()
+os.environ['DJANGO_SETTINGS_MODULE'] = 'gaint_plus.settings'
+
+application = get_wsgi_application()
