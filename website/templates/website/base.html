@@ -17,7 +17,7 @@
     {% block title %}
 
     {% endblock %}
-    
+
 </head>
 <body style="background: url('../../static/website/assets/hero-bkg.png') no-repeat ;">
 
@@ -36,7 +36,7 @@
             <div id="navbar-links" class="d-flex align-items-center me-5">
             <ul class="d-flex mb-0">
                 <li class="navbar-links"><a href="/" class="active"> Home</a></li>
-                <li class="navbar-links"><a href=""> Who we are</a></li>
+                <li class="navbar-links"><a href="#our-services"> Who we are</a></li>
                 <li class="navbar-links"><a href=""> Products</a></li>
                 <li class="navbar-links"><a href=""> Our Work</a></li>
                 <li class="navbar-links"><a href=""> Contact Us</a></li>
@@ -100,7 +100,7 @@
         <div class="d-flex justify-content-between mb-3">
         <ul class="mb-0 ps-0">
             <li class="navbar-links"><a href="/" class="active"> Home</a></li>
-            <li class="navbar-links"><a href=""> Who we are</a></li>
+            <li class="navbar-links"><a href="#our-services"> Who we are</a></li>
             <li class="navbar-links"><a href=""> Products</a></li>
             <li class="navbar-links"><a href=""> Our Work</a></li>
             <li class="navbar-links"><a href=""> Contact Us</a></li>
@@ -162,6 +162,16 @@
       document.getElementById('mob-navbar-links').classList.toggle('active')
       document.getElementById('navbars').classList.toggle('active')
     })
+    let links = document.querySelectorAll('#mobile-navbar .navbar-links a')
+    for(let i=0;i<links.length;i++){
+        links[i].addEventListener('click',()=>{
+            document.querySelector('body').classList.toggle('mob-nav-active')
+            document.getElementById('hamburger-menu').classList.toggle('active')
+            document.getElementById('mob-navbar-links').classList.toggle('active')
+            document.getElementById('navbars').classList.toggle('active')
+        })
+    }
+
   </script>
 
 </body>

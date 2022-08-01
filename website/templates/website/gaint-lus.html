@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaint-plus</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #img img {
+            width: 100%;
+            background: url("{% static 'website/assets/home.png' %}") no-repeat;
+            background-repeat: round;
+        }
+    </style>
+</head>
+<body>
+    <div id="img">
+        <img src="{% static 'website/assets/home-front.png' %}" alt="gaint-plus">
+    </div>
+</body>
+</html>
