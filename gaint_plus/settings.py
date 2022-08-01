@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-+sh4+)77v(bv(atm-)=_^4bhu@u%tw!j04#2xs847sz)*l&v+6
 DEBUG = True
 # DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','kuldeeprawat.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','figmavibes.pythonanywhere.com']
 
 
 # Application definition
