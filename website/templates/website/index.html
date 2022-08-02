@@ -12,7 +12,7 @@
   <div class="container85">
     <div class="row mb-5" >
       <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 mt-5 d-flex align-items-center">
-        <div >
+        <div data-aos="fade-down" data-aos-duration="1000">
           <div>
             <svg style="width: 50%;" viewBox="0 0 285 42" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 21C11 9.67816 20.1782 0.5 31.5 0.5H264.5C275.822 0.5 285 9.67816 285 21C285 32.3218 275.822 41.5 264.5 41.5H31.5C20.1782 41.5 11 32.3218 11 21Z" fill="url(#paint0_linear_10_2298)" fill-opacity="0.25"/>
@@ -47,24 +47,24 @@
 
           <div class="mt-4">
             <div class="d-flex gp-btns flex-wrap">
-              <button class="primary-btn-gp me-2 ps-5 pe-5 mt-3">
-                Contact Now
-              </button>
-              <button class="stroke-btn ms-2 mt-3">
-                <div class="stroke-btn-in ps-4 pe-4">
-                  <span class="me-2">
-                    <img src="{% static 'website/assets/wa.png' %}" alt="gaint plus whatsapp number">
-                  </span>
-                  <span>WhatsApp Now</span>
-                </div>
-              </button>
+              <a class="primary-btn-gp me-2 ps-5 pe-5 mt-3" href="#">
+                <span>
+                  Contact Now
+                </span>
+              </a>
+              <a class="stroke-btn mt-3" href="#">
+                <span >
+                  <img src="{% static 'website/assets/wa.png' %}" alt="gaint plus whatsapp number" style="width:20px;">
+                  WhatsApp Now
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 mt-5">
         <!-- <model-viewer src="{% static 'website/assets/scene.gltf' %}" alt="VR Headset" auto-rotate camera-controls ar ios-src="assets/HTC_Vive_Headset.gltf"></model-viewer> -->
-        <div id="room-svg" class="text-end">
+        <div id="room-svg" class="text-end" data-aos="fade-down" data-aos-duration="1000">
             <svg  viewBox="0 0 866 591" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Group 44">
             <rect id="Background 1" x="149" width="596" height="591" fill="url(#pattern0)"/>
@@ -164,12 +164,12 @@
   <div class="container85">
     <div class="row m-0 flex-wrap-reverse">
       <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-5">
-        <div class="m-auto">
+        <div class="m-auto" data-aos="fade-up" data-aos-duration="1000">
           <img src="{% static 'website/assets/section-2.png' %}" alt="gaint-plus" style="width: 100%;">
         </div>
       </div>
       <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-5 d-flex align-items-center justify-content-end">
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1000">
           <div>
             <h2>
               We Built a Next Generation <br> Smart Rooms
@@ -181,14 +181,12 @@
             </p>
           </div>
           <div class="mt-3">
-            <button class="stroke-btn ms-2 mt-3">
-              <div class="stroke-btn-in ps-4 pe-4">
-                <span class="me-2">
-                  <img src="{% static 'website/assets/wa.png' %}" alt="gaint plus whatsapp number">
-                </span>
-                <span>WhatsApp Now</span>
-              </div>
-            </button>
+            <a class="stroke-btn mt-3" href="#">
+              <span >
+                <img src="{% static 'website/assets/wa.png' %}" alt="gaint plus whatsapp number" style="width:20px;">
+                WhatsApp Now
+              </span>
+            </a>
           </div>
 
         </div>
@@ -211,18 +209,176 @@
           Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. 
         </p>
       </div>        
-      <div class="row m-0">
-        
+      <div class="row m-0 mt-5" id="services">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
+          <div class="service-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="service" >
+              <div class="ser-img">
+                <img src="{% static 'website/assets/ser-1.png' %}" alt="gaint-plus services">
+              </div>
+              <div class="body">
+                <div class="title">
+                  <h2>
+                    Professional Setup Design
+                  </h2>
+                </div>
+                <div >
+                  <p class="sub-text">
+                    We can prepare a special corner for coffee in your home with a distinct character that reflects your personal taste, taking into account its fit with your home decor.
+                  </p>
+                </div>
+                <div class="pricing-container mt-2 mb-2">
+                  <div class="pricing">
+                    <span style="text-transform: uppercase;">
+                      399 SAR
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buy-btn">
+                <a href="" >
+                  <!-- <div> -->
+                    <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_31_180)">
+                        <path d="M7.41353 18.121C7.86844 18.121 8.23721 17.7522 8.23721 17.2973C8.23721 16.8424 7.86844 16.4736 7.41353 16.4736C6.95862 16.4736 6.58984 16.8424 6.58984 17.2973C6.58984 17.7522 6.95862 18.121 7.41353 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.4741 18.121C16.929 18.121 17.2978 17.7522 17.2978 17.2973C17.2978 16.8424 16.929 16.4736 16.4741 16.4736C16.0192 16.4736 15.6504 16.8424 15.6504 17.2973C15.6504 17.7522 16.0192 18.121 16.4741 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M0.823242 0.82373H4.11798L6.32545 11.8529C6.40077 12.2321 6.60708 12.5727 6.90825 12.8152C7.20942 13.0576 7.58626 13.1864 7.97282 13.179H15.979C16.3656 13.1864 16.7424 13.0576 17.0436 12.8152C17.3448 12.5727 17.5511 12.2321 17.6264 11.8529L18.9443 4.94215H4.94166" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_31_180">
+                        <rect width="19.7684" height="19.7684" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>                        
+                    </span>
+                    <span class="ms-2">
+                      Buy now
+                    </span>
+                  <!-- </div> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
+          <div class="service-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="service" >
+              <div class="ser-img">
+                <img src="{% static 'website/assets/ser-1.png' %}" alt="gaint-plus services">
+              </div>
+              <div class="body">
+                <div class="title">
+                  <h2>
+                    Professional Setup Design
+                  </h2>
+                </div>
+                <div >
+                  <p class="sub-text">
+                    We can prepare a special corner for coffee in your home with a distinct character that reflects your personal taste, taking into account its fit with your home decor.
+                  </p>
+                </div>
+                <div class="pricing-container mt-2 mb-2">
+                  <div class="pricing">
+                    <span style="text-transform: uppercase;">
+                      399 SAR
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buy-btn">
+                <a href="" >
+                  <!-- <div> -->
+                    <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_31_180)">
+                        <path d="M7.41353 18.121C7.86844 18.121 8.23721 17.7522 8.23721 17.2973C8.23721 16.8424 7.86844 16.4736 7.41353 16.4736C6.95862 16.4736 6.58984 16.8424 6.58984 17.2973C6.58984 17.7522 6.95862 18.121 7.41353 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.4741 18.121C16.929 18.121 17.2978 17.7522 17.2978 17.2973C17.2978 16.8424 16.929 16.4736 16.4741 16.4736C16.0192 16.4736 15.6504 16.8424 15.6504 17.2973C15.6504 17.7522 16.0192 18.121 16.4741 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M0.823242 0.82373H4.11798L6.32545 11.8529C6.40077 12.2321 6.60708 12.5727 6.90825 12.8152C7.20942 13.0576 7.58626 13.1864 7.97282 13.179H15.979C16.3656 13.1864 16.7424 13.0576 17.0436 12.8152C17.3448 12.5727 17.5511 12.2321 17.6264 11.8529L18.9443 4.94215H4.94166" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_31_180">
+                        <rect width="19.7684" height="19.7684" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>                        
+                    </span>
+                    <span class="ms-2">
+                      Buy now
+                    </span>
+                  <!-- </div> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
+          <div class="service-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="service" >
+              <div class="ser-img">
+                <img src="{% static 'website/assets/ser-1.png' %}" alt="gaint-plus services">
+              </div>
+              <div class="body">
+                <div class="title">
+                  <h2>
+                    Professional Setup Design
+                  </h2>
+                </div>
+                <div>
+                  <p class="sub-text">
+                    We can prepare a special corner for coffee in your home with a distinct character that reflects your personal taste, taking into account its fit with your home decor.
+                  </p>
+                </div>
+                <div class="pricing-container mt-2 mb-2">
+                  <div class="pricing">
+                    <span style="text-transform: uppercase;">
+                      399 SAR
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buy-btn">
+                <a href="" >
+                  <!-- <div> -->
+                    <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_31_180)">
+                        <path d="M7.41353 18.121C7.86844 18.121 8.23721 17.7522 8.23721 17.2973C8.23721 16.8424 7.86844 16.4736 7.41353 16.4736C6.95862 16.4736 6.58984 16.8424 6.58984 17.2973C6.58984 17.7522 6.95862 18.121 7.41353 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.4741 18.121C16.929 18.121 17.2978 17.7522 17.2978 17.2973C17.2978 16.8424 16.929 16.4736 16.4741 16.4736C16.0192 16.4736 15.6504 16.8424 15.6504 17.2973C15.6504 17.7522 16.0192 18.121 16.4741 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M0.823242 0.82373H4.11798L6.32545 11.8529C6.40077 12.2321 6.60708 12.5727 6.90825 12.8152C7.20942 13.0576 7.58626 13.1864 7.97282 13.179H15.979C16.3656 13.1864 16.7424 13.0576 17.0436 12.8152C17.3448 12.5727 17.5511 12.2321 17.6264 11.8529L18.9443 4.94215H4.94166" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_31_180">
+                        <rect width="19.7684" height="19.7684" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>                        
+                    </span>
+                    <span class="ms-2">
+                      Buy now
+                    </span>
+                  <!-- </div> -->
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  </div>
+</div>
 
   <!-- our services end -->
 
   <!-- for 3d view -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  <!-- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> -->
 
 {% endblock %}
 
