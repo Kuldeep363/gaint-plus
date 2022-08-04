@@ -145,6 +145,7 @@ a{
         color: #fff;
         -webkit-transition: all 1s cubic-bezier(.16,1,.3,1);
         transition: all 1s cubic-bezier(.16,1,.3,1);
+        border-radius: 10px;
 }
 .stroke-btn::before {
     content: '';
@@ -230,7 +231,7 @@ a{
 }
 
 model-viewer {
-    height: 100%;
+    height: 550px;
     width: 100%;
     border: none;
 }
@@ -345,11 +346,11 @@ nav#mobile-navbar{
 
 /* services */
 
-#services .service-container{
+#services .service-container, #products .products-container{
     display: flex;
 }
 
-.service{
+.service, .products{
     width: 70%;
     background-color: #1E2738;
     border-radius: 15px;
@@ -359,35 +360,73 @@ nav#mobile-navbar{
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
 }
-.service:hover{
+.service:hover, .products:hover{
     box-shadow: 0px 5px 25px rgba(223, 61, 215, 0.1);
+    transform: translateY(-10px);
 }
-.service img{
+.service img, .products img{
     width: 100%;
 }
-.service .body{
+.service .body, .products .body{
     margin: 1rem;
 }
-.service .buy-btn a{
+.service .buy-btn a, .products .buy-btn a{
     display: block;
     padding: 20px 20px;
     background: var(--border);
     font-weight: 600;
 }
-#services div:nth-child(2) .service-container{
+#services div:nth-child(2) .service-container, #products div:nth-child(2) .products-container {
     justify-content: center;
 }
-#services div:nth-child(3) .service-container{
+#services div:nth-child(3) .service-container, #products div:nth-child(3) .products-container{
     justify-content: end;
 }
-.service .pricing-container{
+.service .pricing-container, .products .pricing-container{
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.35);
     border-radius: 7px;
 }
-.service .title h2{
+.service .title h2, .products .title h2{
     font-size: 1.2rem;
 }
+.products .prod-img{
+    position: relative;
+}
+.products .title{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,50%);
+    z-index: 10;
+}
+.products .overlay{
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgb(50 62 81 / 68%);
+    background-size: cover;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+}
+
+.products .buy-btn{    
+    width: 100%;
+    position: absolute;
+    bottom: -70px;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out;
+}
+.products:hover .overlay{
+    opacity: 1;
+}
+.products:hover .buy-btn{
+    bottom: 0;
+}
+
 @media(max-width:1364px){
     #web-navbar nav .navbar-links, #web-navbar button, #web-navbar a {
         font-size: 0.8rem!important;
@@ -404,7 +443,7 @@ nav#mobile-navbar{
     }
 }
 @media(max-width:1024px){
-    .service{
+    .service, .products{
         width: 90%;
     }
 }
@@ -432,13 +471,13 @@ nav#mobile-navbar{
         transform: translateX(-50%);
         border-radius: 3px 3px 0 0;
     }
-    .service{
+    .service, .products{
         width: 90%;
     }
-    .service .buy-btn a{
+    .service .buy-btn a, .products .buy-btn a{
         padding: 15px 20px;
     }
-    #services div .service-container{
+    #services div .service-container, #products div .products-container{
         justify-content: center!important;
     }
     
@@ -449,7 +488,7 @@ nav#mobile-navbar{
         margin-left: 0!important;
         margin-right: 0!important;
     }
-    #hero-section button{
+    #hero-section .gp-btns a{
         width: 250px;
     }
 }
