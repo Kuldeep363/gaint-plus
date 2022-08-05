@@ -269,7 +269,7 @@ model-viewer {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -10px;
     width: 75%;
     height: 3px;
     background: var(--border);
@@ -346,11 +346,12 @@ nav#mobile-navbar{
 
 /* services */
 
-#services .service-container, #products .products-container{
+#services .service-container, #products .products-container, #advantages .adv-container{
     display: flex;
+    height: 100%;
 }
 
-.service, .products{
+.service, .products, .adv{
     width: 70%;
     background-color: #1E2738;
     border-radius: 15px;
@@ -367,7 +368,7 @@ nav#mobile-navbar{
 .service img, .products img{
     width: 100%;
 }
-.service .body, .products .body{
+.service .body, .products .body, .adv .body{
     margin: 1rem;
 }
 .service .buy-btn a, .products .buy-btn a{
@@ -376,10 +377,10 @@ nav#mobile-navbar{
     background: var(--border);
     font-weight: 600;
 }
-#services div:nth-child(2) .service-container, #products div:nth-child(2) .products-container {
+#services div:nth-child(2) .service-container, #products div:nth-child(2) .products-container, #advantages div:nth-child(2) .adv-container, #advantages div:nth-child(5) .adv-container {
     justify-content: center;
 }
-#services div:nth-child(3) .service-container, #products div:nth-child(3) .products-container{
+#services div:nth-child(3) .service-container, #products div:nth-child(3) .products-container, #advantages div:nth-child(3) .adv-container, #advantages div:nth-child(6) .adv-container{
     justify-content: end;
 }
 .service .pricing-container, .products .pricing-container{
@@ -387,7 +388,7 @@ nav#mobile-navbar{
     background-color: rgba(255, 255, 255, 0.35);
     border-radius: 7px;
 }
-.service .title h2, .products .title h2{
+.service .title h2, .products .title h2, .adv .title h2{
     font-size: 1.2rem;
 }
 .products .prod-img{
@@ -426,7 +427,61 @@ nav#mobile-navbar{
 .products:hover .buy-btn{
     bottom: 0;
 }
-
+#advantages .adv{
+    position: relative;
+    padding: 25px;
+    background-color: transparent;
+}
+#advantages .adv .sub-text{
+    color: var(--white);
+}
+.bkg-layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 33, 53, 0.25);
+    backdrop-filter: blur(20px);
+}
+#advantages .adv:hover{
+    transform: translateY(-10px);
+}
+#advantages .adv .adv-bkg img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(50px);
+}
+#advantages .adv:hover .adv-bkg img{
+    animation: rotation 4s linear infinite;
+    transform-origin: center;
+}
+@keyframes rotation{
+    100%{
+        transform:  rotate(360deg);
+    }
+}
+#advantages .adv-img img{
+    width: 75px;
+}
+#advantages .adv-bkg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#advantages .adv-bkg svg{
+    width: 100%;
+    height: 100%;
+}
+/* #advantages .adv-bkg .bkg-filter{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(94.1deg, #DF3DD6 -10.95%, #3AD3D9 115.14%);
+    filter: blur(100px);
+} */
 @media(max-width:1364px){
     #web-navbar nav .navbar-links, #web-navbar button, #web-navbar a {
         font-size: 0.8rem!important;
@@ -443,7 +498,7 @@ nav#mobile-navbar{
     }
 }
 @media(max-width:1024px){
-    .service, .products{
+    .service, .products, .adv{
         width: 90%;
     }
 }
@@ -451,6 +506,9 @@ nav#mobile-navbar{
     *{
         text-align: center;
         font-size: 0.9rem;
+    }
+    .container85{
+        width: 95%;
     }
     nav#web-navbar{
         display: none;
@@ -471,13 +529,13 @@ nav#mobile-navbar{
         transform: translateX(-50%);
         border-radius: 3px 3px 0 0;
     }
-    .service, .products{
+    .service, .products, .adv{
         width: 90%;
     }
     .service .buy-btn a, .products .buy-btn a{
         padding: 15px 20px;
     }
-    #services div .service-container, #products div .products-container{
+    #services div .service-container, #products div .products-container,  #advantages div .adv-container{
         justify-content: center!important;
     }
     
