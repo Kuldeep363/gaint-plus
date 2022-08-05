@@ -476,12 +476,23 @@ nav#mobile-navbar{
     width: 100%;
     height: 100%;
 }
-/* #advantages .adv-bkg .bkg-filter{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(94.1deg, #DF3DD6 -10.95%, #3AD3D9 115.14%);
-    filter: blur(100px);
-} */
+#our-work{
+    background: url('../assets/section-2-bkg.png') center center no-repeat;
+}
+#our-work .our-img{
+    margin-right: 50px;
+}
+#our-work .our-img img{
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 32px rgba(139, 131, 227, 0.25);
+}
+#our-work .work-scroll::-webkit-scrollbar{
+    height: 10px;
+}
+#our-work .work-scroll::-webkit-scrollbar-thumb, #our-work .work-scroll::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
 @media(max-width:1364px){
     #web-navbar nav .navbar-links, #web-navbar button, #web-navbar a {
         font-size: 0.8rem!important;
