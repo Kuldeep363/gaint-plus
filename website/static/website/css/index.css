@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 
 :root{
@@ -17,14 +17,16 @@ html{
 }
 
 body{
-    background-color: var(--black)!important;
+    /* background-color: var(--black)!important; */
+    background: url('../assets/abs-bkg.svg') center center no-repeat;
+    background-size: cover;
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: var(--white);
 }
 /* width */
@@ -258,7 +260,9 @@ model-viewer {
 
 }
 #section-2{
-    background: url('../assets/section-2-bkg.png') no-repeat center center;
+    background: url('../assets/bkg.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .heading h2{
@@ -345,6 +349,14 @@ nav#mobile-navbar{
 
 
 /* services */
+#our-services{
+    background: url('../assets/abs-bkg-1.svg') center center no-repeat;
+    background-size: cover;
+}
+
+.service{
+    position: relative;
+}
 
 #services .service-container, #products .products-container, #advantages .adv-container{
     display: flex;
@@ -377,6 +389,11 @@ nav#mobile-navbar{
     background: var(--border);
     font-weight: 600;
 }
+/* .service .buy-btn {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+} */
 #services div:nth-child(2) .service-container, #products div:nth-child(2) .products-container, #advantages div:nth-child(2) .adv-container, #advantages div:nth-child(5) .adv-container {
     justify-content: center;
 }
@@ -476,8 +493,10 @@ nav#mobile-navbar{
     width: 100%;
     height: 100%;
 }
-#our-work{
-    background: url('../assets/section-2-bkg.png') center center no-repeat;
+#our-products{
+    background: url('../assets/bkg.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 #our-work .our-img{
     margin-right: 50px;
@@ -493,6 +512,47 @@ nav#mobile-navbar{
 #our-work .work-scroll::-webkit-scrollbar-thumb, #our-work .work-scroll::-webkit-scrollbar-track{
     border-radius: 10px;
 }
+
+#contact{
+    background: url('../assets/contact-bkg.jpg') center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact-form .contact-form{
+    background-color: var(--black);
+    border-radius: 20px;
+}
+#contact-form .form{
+    width: 90%;
+    margin: 20px 10px;
+}
+#contact-form input, #contact-form textarea{
+    /* height: 45px; */
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    box-shadow: none;
+    transition: 0.3s all ease-in-out;
+    color: var(--white);
+}
+#contact-form textarea#message{
+    height: 150px;
+}
+#contact-form form button{
+    width: 100%;
+    background-size: cover;
+}
+@media(max-width:1600px){
+    .service, .products, .adv{
+        width: 80%;
+    }
+    .service .title h2{
+        font-size: 1rem;
+    }
+    .service .sub-text{
+        font-size: 0.8rem;
+    }
+}
 @media(max-width:1364px){
     #web-navbar nav .navbar-links, #web-navbar button, #web-navbar a {
         font-size: 0.8rem!important;
@@ -502,24 +562,22 @@ nav#mobile-navbar{
     #web-navbar nav .navbar-links, #web-navbar button, #web-navbar a  {
         font-size: 0.6rem!important;
     }
+    .service, .products, .adv{
+        width: 90%;
+    }
 }
 @media(max-width:1038px){
     #web-navbar nav .navbar-links, #web-navbar button, #web-navbar a  {
         font-size: 0.54rem!important;
     }
 }
-@media(max-width:1024px){
-    .service, .products, .adv{
-        width: 90%;
-    }
-}
-@media(max-width:992px){
+@media(max-width:991px){
     *{
         text-align: center;
         font-size: 0.9rem;
     }
     .container85{
-        width: 95%;
+        width: 90%;
     }
     nav#web-navbar{
         display: none;
@@ -549,6 +607,9 @@ nav#mobile-navbar{
     #services div .service-container, #products div .products-container,  #advantages div .adv-container{
         justify-content: center!important;
     }
+    #contact-form form div, #contact-form form input{
+        text-align: left;
+    }
     
     
 }
@@ -559,5 +620,13 @@ nav#mobile-navbar{
     }
     #hero-section .gp-btns a{
         width: 250px;
+    }
+}
+@media(max-width:767px){
+    #contact .data{
+        display: none;
+    }
+    #contact a div:nth-child(1){
+        justify-content: center;
     }
 }
