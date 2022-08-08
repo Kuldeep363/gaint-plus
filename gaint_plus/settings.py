@@ -15,8 +15,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+sh4+)77v(bv(atm-)=_^4bhu@u%tw!j04#2xs847sz)*l&v+6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','figmavibes.pythonanywhere.com']
 
@@ -125,7 +125,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# LANGUAGE_CODE = 'ar'
+# LANGUAGE_CODE = 'en'
 
 # LOCALE_PATHS = (
 #    os.path.join(BASE_DIR, 'locale/'),
