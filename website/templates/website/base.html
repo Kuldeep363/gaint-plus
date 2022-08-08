@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,12 +37,12 @@
         <div class="d-flex justify-content-between">
             <div id="navbar-links" class="d-flex align-items-center me-5">
             <ul class="d-flex mb-0">
-                <li class="navbar-links"><a href="/" class="active"> Home</a></li>
-                <li class="navbar-links"><a href="#our-services"> Who we are</a></li>
-                <li class="navbar-links"><a href=""> Products</a></li>
-                <li class="navbar-links"><a href=""> Our Work</a></li>
-                <li class="navbar-links"><a href=""> Contact Us</a></li>
-                <li class="navbar-links"><a href=""> Terms</a></li>
+                <li class="navbar-links"><a href="/" class="active">{% trans "Home" %} </a></li>
+                <li class="navbar-links"><a href="#our-services">{% trans "Who we are" %} </a></li>
+                <li class="navbar-links"><a href="">{% trans "Products" %} </a></li>
+                <li class="navbar-links"><a href="">{% trans "Our Work" %} </a></li>
+                <li class="navbar-links"><a href="">{% trans "Contact Us" %} </a></li>
+                <li class="navbar-links"><a href="">{% trans "Terms" %} </a></li>
             </ul>
             </div>
             <div class="navbar-btns d-flex align-items-center">
@@ -55,18 +56,18 @@
                     </span>
                     <div id="lang-dropdown">
                         <ul class="m-0 p-0 pt-2 pb-2 text-start">
-                            <li>
-                                <a href="/" >
+                            <a href="/en" >
+                                <li>
                                     <span><img src="{% static 'website/assets/eng.png' %}" alt="gaint-plus english"></span>
                                     <span class="ms-2">English</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/" >
+                                </li>
+                            </a>
+                            <a href="/" >
+                                <li>
                                     <span><img src="{% static 'website/assets/ar.png' %}" alt="gaint-plus arabic"></span>
                                     <span class="ms-2">Arabic</span>
-                                </a>
-                            </li>
+                                </li>
+                            </a>
                         </ul>
                     </div>
                 </button>
@@ -108,12 +109,12 @@
         <div id="mob-navbar-links" class="d-flex align-items-center flex-column me-5">
             <div class="d-flex justify-content-between mb-3  pt-5">
             <ul class="mb-0 ps-0">
-                <li class="navbar-links"><a href="/" class="active"> Home</a></li>
-                <li class="navbar-links"><a href="#our-services"> Who we are</a></li>
-                <li class="navbar-links"><a href=""> Products</a></li>
-                <li class="navbar-links"><a href=""> Our Work</a></li>
-                <li class="navbar-links"><a href=""> Contact Us</a></li>
-                <li class="navbar-links"><a href=""> Terms</a></li>
+                <li class="navbar-links"><a href="/" class="active">{% trans "Home" %} </a></li>
+                <li class="navbar-links"><a href="#our-services">{% trans "Who we are" %} </a></li>
+                <li class="navbar-links"><a href="">{% trans "Products" %} </a></li>
+                <li class="navbar-links"><a href="">{% trans "Our Work" %} </a></li>
+                <li class="navbar-links"><a href="">{% trans "Contact Us" %} </a></li>
+                <li class="navbar-links"><a href="">{% trans "Terms" %} </a></li>
             </ul>
             </div>
         <div class="navbar-btns" >
@@ -127,18 +128,18 @@
                 </span>
                 <div id="lang-dropdown">
                 <ul class="m-0 p-0 pt-2 pb-2">
-                    <li class="text-start">
-                        <a href="/">
+                    <a href="/en">
+                        <li class="text-start">
                             <span><img src="{% static 'website/assets/eng.png' %}" alt="gaint-plus english"></span>
                             <span>English</span>
-                        </a>
-                    </li>
-                    <li class="text-start">
-                        <a href="/" >
+                        </li>
+                    </a>
+                    <a href="/" >
+                        <li class="text-start">
                             <span><img src="{% static 'website/assets/ar.png' %}" alt="gaint-plus arabic"></span>
                             <span>Arabic</span>
-                        </a>
-                    </li>
+                        </li>
+                    </a>
                 </ul>
                 </div>
                 </button>

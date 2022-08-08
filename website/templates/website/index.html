@@ -202,9 +202,11 @@
   <div id="our-services" class="d-flex justify-content-center">
   <div class="container85">
     <div>
-      <div class="heading mt-5">
-        <h2>Our Services</h2>
-        <p class="sub-text mt-4">
+      <div class="heading mt-5 ">
+        <div class="d-flex">
+          <h2>Our Services</h2>
+        </div>
+        <p class="sub-text mt-4 d-flex">
           Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. 
         </p>
       </div>        
@@ -375,7 +377,7 @@
   <div id="our-products" class="d-flex justify-content-center">
     <div class="container85">
       <div>
-        <div class="heading mt-5 mb-4">
+        <div class="heading mt-5 mb-4 d-flex">
           <h2>Our Products</h2>
         </div>        
         <div class="row m-0 mt-5 mb-5" id="products">
@@ -511,8 +513,10 @@
     <div class="container85">
       <div>
         <div class="heading mt-5">
-          <h2>Advantages of Buying a Design</h2>
-          <p class="sub-text mt-4">
+          <div class="d-flex">
+            <h2>Advantages of Buying a Design</h2>
+          </div>
+          <p class="sub-text mt-4 d-flex">
             Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. 
           </p>
         </div>  
@@ -704,8 +708,10 @@
     <div class="container85">
       <div>
         <div class="heading mt-5">
-          <h2>Some of Our Team Work</h2>
-          <p class="sub-text mt-4">
+          <div class="d-flex">
+            <h2>Some of Our Team Work</h2>
+          </div>
+          <p class="sub-text mt-4 d-flex">
             Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. 
           </p>
         </div> 
@@ -741,12 +747,14 @@
 
   <!-- contact us -->
 
-  <div id="contact" class="d-flex justify-content-center mb-5">
+  <!-- <div id="contact" class="d-flex justify-content-center mb-5">
     <div class="container85">
       <div>
         <div class="heading mt-5">
-          <h2>Contact With Us</h2>
-          <p class="sub-text mt-4">
+          <div class="d-flex">
+            <h2>Contact With Us</h2>
+          </div>
+          <p class="sub-text mt-4 d-flex">
             Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. 
           </p>
         </div>
@@ -797,7 +805,7 @@
               <div class="contact-form d-flex justify-content-center" data-aos="flip-left" data-aos-duration="1000">
                 <div class="form">
                   <h2 class="mb-3">Get in touch</h2>
-                  <form>
+                  <form >
                     <div class="mb-3 form-floating">
                       <input type="text" placeholder="You name" class="form-control" id="name">
                       <label class="form-label" for="name">Name</label>
@@ -826,7 +834,7 @@
                       <textarea class="form-control" id="message" placeholder="Your message"></textarea>
                       <label class="form-label" for="message">Message</label>
                     </div>
-                    <button type="submit" class="primary-btn-gp">Submit</button>
+                    <button type="button" class="primary-btn-gp" onclick="contact()">Submit</button>
                   </form>
                 </div>
               </div>
@@ -836,15 +844,34 @@
       </div>
     </div>
   </div>
-  
+   -->
   <!-- contact us end -->
 
   <!-- for 3d view -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
-{% endblock %}
+  <a href="" id="contact-data" target="_blank"></a>
 
+  <!-- contact script -->
+    
+  <script>
+    function contact(){
+      console.log('submit')
+      let href = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=363rawatboy@gmail.com&su=' + document.getElementById('subject').value +'&body='+document.getElementById('message').value+'\nPhone number:'+document.getElementById('number').value+'\nEmail:'+document.getElementById('email').value 
+
+      document.getElementById('contact-data').setAttribute('href',href);
+      document.getElementById('contact-data').click()
+    }
+  </script>
+  
+  
+  <!-- contact script end -->
+
+
+
+  {% endblock %}
+  
 
 </body>
 </html>

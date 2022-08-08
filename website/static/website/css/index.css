@@ -12,6 +12,10 @@
     --btn-shadow: 0px 0px 25px rgba(223, 61, 214, 0.25);
 }
 
+/* .d-flex, .row{
+    flex-direction: row-reverse!important;
+} */
+
 html{
     scroll-behavior: smooth;
 }
@@ -141,7 +145,6 @@ a{
         font-weight: 600;
         letter-spacing: .08em;
         padding: 14px 20px;
-        border-radius: 0;
         overflow: hidden;
         background: 0 0;
         color: #fff;
@@ -219,7 +222,7 @@ a{
 #lang-dropdown li:hover{
     background-color: #EDECF8;
 }
-#lang-dropdown li a span{
+#lang-dropdown  a span{
     color: var(--black);
 }
 .change-lang:hover  #lang-dropdown{
