@@ -12,18 +12,17 @@
     --btn-shadow: 0px 0px 25px rgba(223, 61, 214, 0.25);
 }
 
-/* .d-flex, .row{
-    flex-direction: row-reverse!important;
-} */
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
-    /* background-color: var(--black)!important; */
-    background: url("../assets/abs-bkg.bf8ed5abc5b0.svg") center center no-repeat;
-    background-size: cover;
+    overflow-x: hidden;
+    background-color: var(--black)!important;
+    /* background: url("../assets/abs-bkg.e01083a695aa.png") center center no-repeat;
+    background-size: cover; */
 }
 
 *{
@@ -244,6 +243,14 @@ model-viewer {
 .sub-text{
     color: #919DA4;
 }
+/* 
+.hero-1::before{
+    content: '';
+    position: absolute;
+    left: -100px;
+    height: 100%;
+    background: url("../assets/hero-bkg-1.e154c03210a6.png");
+} */
 
 #room-svg svg{
     width: 100%;
@@ -263,24 +270,26 @@ model-viewer {
 
 }
 #section-2{
-    background: url("../assets/bkg.d5ed029d5890.jpg") no-repeat center center;
+    /* background: url("../assets/bkg.d5ed029d5890.jpg") no-repeat center center; */
     background-attachment: fixed;
     background-size: cover;
 }
 
-.heading h2{
+.heading h2, .heading h4{
     position: relative;
     display: inline;
 }
 .heading h2::before{
     content: '';
     position: absolute;
-    left: 0;
+    left: -10px;
     bottom: -10px;
-    width: 75%;
-    height: 3px;
+    width: 50px;
+    height: 50px;
     background: var(--border);
-    border-radius: 0 3px 0 0;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(10px);
 }
 
 
@@ -352,10 +361,7 @@ nav#mobile-navbar{
 
 
 /* services */
-#our-services{
-    background: url("../assets/abs-bkg-1.b4baf2644310.svg") center center no-repeat;
-    background-size: cover;
-}
+
 
 .service{
     position: relative;
@@ -497,9 +503,31 @@ nav#mobile-navbar{
     height: 100%;
 }
 #our-products{
-    background: url("../assets/bkg.d5ed029d5890.jpg") center center no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    position: relative;
+}
+#our-products::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #1e27386b;
+    z-index: -2;
+}
+#our-work{
+    position: relative;
+}
+#our-work::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    border-radius: 0 20px 20px 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e27386b;
+    z-index: -2;
+
 }
 #our-work .our-img{
     margin-right: 50px;
@@ -545,6 +573,85 @@ nav#mobile-navbar{
     width: 100%;
     background-size: cover;
 }
+.footer-items ul li a{
+    transition: 0.3s all ease-in-out;
+}
+.footer-items ul li a:hover{
+    color: var(--white);
+    letter-spacing: 3px;
+}
+.footer-sec-3 img{
+    transition: 0.3s all ease-in-out;
+}
+.footer-sec-3 img:hover{
+    transform: scale(0.9);
+}
+
+@-webkit-keyframes heartBeat {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    14% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  
+    28% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    42% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  
+    70% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes heartBeat {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    14% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  
+    28% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  
+    42% {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+  
+    70% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  .heartBeat {
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+
 @media(max-width:1600px){
     .service, .products, .adv{
         width: 80%;
@@ -579,6 +686,9 @@ nav#mobile-navbar{
         text-align: center;
         font-size: 0.9rem;
     }
+    .heading.d-flex{
+        justify-content: center;
+    }
     .container85{
         width: 90%;
     }
@@ -595,11 +705,6 @@ nav#mobile-navbar{
     }
     .gp-btns{
         justify-content: center;
-    }
-    .heading h2::before{
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 3px 3px 0 0;
     }
     .service, .products, .adv{
         width: 90%;
