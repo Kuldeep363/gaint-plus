@@ -1,5 +1,7 @@
 {% load static %}
-{% load i18n %}.
+{% load i18n %}
+{% url 'home' as home %}
+{% url 'services' as services %}
 {% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
 {% if LANGUAGE_CODE == 'ar' %}
@@ -17,7 +19,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     {% block css %}
-
     {% endblock  %}
     <link rel="stylesheet" href="{% static 'website/css/index.css' %}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -43,12 +44,12 @@
         <div class="d-flex justify-content-between">
             <div id="navbar-links" class="d-flex align-items-center me-5">
             <ul class="d-flex mb-0">
-                <li class="navbar-links"><a href="/" class="active">{% trans "Home" %} </a></li>
-                <li class="navbar-links"><a href="#our-services">{% trans "Who we are" %} </a></li>
-                <li class="navbar-links"><a href="">{% trans "Products" %} </a></li>
-                <li class="navbar-links"><a href="">{% trans "Our Work" %} </a></li>
-                <li class="navbar-links"><a href="">{% trans "Contact Us" %} </a></li>
-                <li class="navbar-links"><a href="">{% trans "Terms" %} </a></li>
+              <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Home" %} </a></li>
+              <li class="navbar-links"><a href="{% url 'services' %}" class="{% if request.path == services %} active {% endif %}">{% trans "Our Services" %}</a></li>
+              <li class="navbar-links"><a href="/#our-products">{% trans "Products" %} </a></li>
+              <li class="navbar-links"><a href="/#our-work">{% trans "Our Work" %} </a></li>
+              <li class="navbar-links"><a href="/#contact">{% trans "Contact Us" %} </a></li>
+              <li class="navbar-links"><a href="/terms">{% trans "Terms" %} </a></li>
             </ul>
             </div>
             <div class="navbar-btns d-flex align-items-center">
@@ -62,13 +63,13 @@
                     </span>
                     <div id="lang-dropdown">
                         <ul class="m-0 p-0 pt-2 pb-2 text-start">
-                            <a href="/en" >
+                            <a href="/en{{ request.get_full_path }}" >
                                 <li>
                                     <span><img src="{% static 'website/assets/eng.png' %}" alt="gaint-plus english"></span>
                                     <span class="ms-2">English</span>
                                 </li>
                             </a>
-                            <a href="/" >
+                            <a href="{{ request.get_full_path |slice:'3:' }}" >
                                 <li>
                                     <span><img src="{% static 'website/assets/ar.png' %}" alt="gaint-plus arabic"></span>
                                     <span class="ms-2">Arabic</span>
@@ -115,12 +116,12 @@
         <div id="mob-navbar-links" class="d-flex align-items-center flex-column me-5">
             <div class="d-flex justify-content-between mb-3  pt-5">
             <ul class="mb-0 ps-0">
-                <li class="navbar-links"><a href="/" class="active">{% trans "Home" %} </a></li>
-                <li class="navbar-links"><a href="#our-services">{% trans "Who we are" %} </a></li>
-                <li class="navbar-links"><a href="">{% trans "Products" %} </a></li>
-                <li class="navbar-links"><a href="">{% trans "Our Work" %} </a></li>
-                <li class="navbar-links"><a href="">{% trans "Contact Us" %} </a></li>
-                <li class="navbar-links"><a href="">{% trans "Terms" %} </a></li>
+              <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Home" %} </a></li>
+              <li class="navbar-links"><a href="{% url 'services' %}" class="{% if request.path == services %} active {% endif %}">{% trans "Our Services" %}</a></li>
+              <li class="navbar-links"><a href="/#our-products">{% trans "Products" %} </a></li>
+              <li class="navbar-links"><a href="/#our-work">{% trans "Our Work" %} </a></li>
+              <li class="navbar-links"><a href="/#contact">{% trans "Contact Us" %} </a></li>
+              <li class="navbar-links"><a href="/terms">{% trans "Terms" %} </a></li>
             </ul>
             </div>
         <div class="navbar-btns" >
@@ -134,18 +135,18 @@
                 </span>
                 <div id="lang-dropdown">
                 <ul class="m-0 p-0 pt-2 pb-2">
-                    <a href="/en">
-                        <li class="text-start">
-                            <span><img src="{% static 'website/assets/eng.png' %}" alt="gaint-plus english"></span>
-                            <span>English</span>
-                        </li>
-                    </a>
-                    <a href="/" >
-                        <li class="text-start">
-                            <span><img src="{% static 'website/assets/ar.png' %}" alt="gaint-plus arabic"></span>
-                            <span>Arabic</span>
-                        </li>
-                    </a>
+                  <a href="/en{{ request.get_full_path }}" >
+                    <li>
+                        <span><img src="{% static 'website/assets/eng.png' %}" alt="gaint-plus english"></span>
+                        <span class="ms-2">English</span>
+                    </li>
+                </a>
+                <a href="{{ request.get_full_path |slice:'3:' }}" >
+                    <li>
+                        <span><img src="{% static 'website/assets/ar.png' %}" alt="gaint-plus arabic"></span>
+                        <span class="ms-2">Arabic</span>
+                    </li>
+                </a>
                 </ul>
                 </div>
                 </button>
@@ -185,26 +186,27 @@
   <!-- footer -->
 
   <footer class="mt-5" style="position: relative;">
-      <!-- <img src="{% static 'website/assets/hero-bkg-1.png' %}" alt="gaint plus" style="position: absolute;right: 0;bottom: 0;"> -->
     <div class="footer-container d-flex justify-content-center">
-      <div class="container85">
+      <div class="container85" style="border-top: 1px solid #1E2738;">
         <div class="footer-wrapper">
           <div class="row m-0 mb-3">
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
               <div class="footer-sec-1 mt-3">
                 <div class="logo mt-3 mb-3 ">
-                  <img src="{% static 'website/assets/logo.png' %}" alt="gaint-logo">
+                  <a href="/">
+                    <img src="{% static 'website/assets/logo.png' %}" alt="gaint-logo">
+                  </a>
                 </div>
                 <div class="mt-4 mb-3 company-description">
                   <p >
-                    Everything related to qimqq and more is distinguished by the design of the rooms, as well as special and exclusive keyboards and mice upon request.
+                    {% trans "Everything related to qimqq and more is distinguished by the design of the rooms, as well as special and exclusive keyboards and mice upon request." %}
                   </p>
                 </div>
                 <div class="registration mt-4 mb-3">
                   <p style="background: var(--border);
                   background-clip:text;
                   -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;">Commercial Registration No: 204365</p>
+                  -webkit-text-fill-color: transparent;">{% trans "Commercial Registration No: 204365" %} </p>
                 </div>
               </div>
             </div>
@@ -212,16 +214,16 @@
               <div class="footer-sec-2 mt-3">
                 <div class="heading mb-4">
                   <h4>
-                    Useful links
+                    {% trans "Useful links" %} 
                   </h4>
                 </div>
                 <div class="footer-items">
                   <ul class="p-0 mt-3">
-                    <li class="mb-2"><a href="#"> Products </a></li>
-                    <li class="mb-2"><a href="#"> Who we are </a></li>
-                    <li class="mb-2"><a href="#"> Contact us </a></li>
-                    <li class="mb-2"><a href="#"> Terms & Conditions </a></li>
-                    <li class="mb-2"><a href="#"> Replacement & Return ploicy </a></li>
+                    <li class="mb-2"><a href="/#our-products">{% trans "Products " %} </a></li>
+                    <li class="mb-2"><a href="/services">{% trans "Our Services" %}  </a></li>
+                    <li class="mb-2"><a href="/#contact">{% trans "Contact us" %}  </a></li>
+                    <li class="mb-2"><a href="/terms">{% trans "Terms & Conditions" %}  </a></li>
+                    <li class="mb-2"><a href="/return-policy">{% trans "Replacement & Return ploicy" %}  </a></li>
                   </ul>
                 </div>
               </div>
@@ -230,7 +232,7 @@
               <div class="footer-sec-3 mt-3">
                 <div class="heading mb-4">
                   <h4>
-                    Connect with us
+                    {% trans "Connect with us" %} 
                   </h4>
                 </div>
                 <div class="social-icons">
@@ -262,7 +264,7 @@
           </div>
           <div class="copyright">
             <div class="text-center">
-              <p>2022 All Rights Reserved Giant PlusTM ©</p>
+              <p> {% trans "2022 All Rights Reserved Giant PlusTM ©" %} </p>
             </div>
           </div>
         </div>
@@ -272,6 +274,46 @@
 
 
   <!-- footer end -->
+
+  <div id="whatsapp-btn">
+    <a href="https://api.whatsapp.com/send?phone=966547774276&text=Hello,I want to know more about services" target="_blank">
+      <svg style="width: 50px;" viewBox="0 0 133 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" width="131" height="132" rx="14" fill="#FEFEFE"/>
+        <path d="M66.4834 26.9047C45.1846 26.9047 27.8701 44.2191 27.8408 65.5179C27.8408 72.8129 29.8916 79.932 33.7588 86.055L34.667 87.5199L30.7705 101.758L45.3896 97.9203L46.7959 98.7699C52.7139 102.286 59.5107 104.161 66.4541 104.161H66.4834C87.7529 104.161 105.536 86.8461 105.536 65.5472C105.536 55.2347 101.083 45.5375 93.7881 38.2425C86.4639 30.9183 76.7959 26.9047 66.4834 26.9047ZM89.1885 82.1C88.2217 84.8246 83.5928 87.2855 81.3662 87.6078C77.6748 88.1644 74.8037 87.8715 67.4502 84.7074C55.8193 79.6683 48.2022 67.9496 47.6162 67.1879C47.0303 66.4261 42.8701 60.889 42.8701 55.1761C42.8701 49.4632 45.8584 46.6507 46.9424 45.4789C47.9971 44.307 49.2568 44.014 50.0478 44.014C50.8096 44.014 51.6006 44.014 52.2744 44.0433C52.9775 44.0726 53.9443 43.7797 54.8818 46.0355C55.8486 48.35 58.1631 54.0629 58.4561 54.6488C58.749 55.2347 58.9541 55.9086 58.5439 56.6703C56.3174 61.1234 53.9443 60.9476 55.1455 62.9984C59.6279 70.7035 64.1104 73.3695 70.9365 76.7972C72.1084 77.3832 72.7822 77.2953 73.4561 76.5043C74.1299 75.7425 76.3564 73.1058 77.1182 71.9632C77.8799 70.7914 78.6709 70.9965 79.7256 71.3773C80.7803 71.7582 86.4932 74.5707 87.665 75.1566C88.8369 75.7425 89.5986 76.0355 89.8916 76.5043C90.1553 77.0609 90.1553 79.4047 89.1885 82.1V82.1ZM118.046 0.303089H14.9209C7.15723 0.303089 0.858398 6.60192 0.858398 14.3656V117.491C0.858398 125.254 7.15723 131.553 14.9209 131.553H118.046C125.81 131.553 132.108 125.254 132.108 117.491V14.3656C132.108 6.60192 125.81 0.303089 118.046 0.303089ZM66.4541 111.983C58.6611 111.983 51.0147 110.02 44.2471 106.328L19.6084 112.803L26.2002 88.7211C22.1279 81.6898 19.9893 73.6918 19.9893 65.4886C20.0186 39.8832 40.8486 19.0531 66.4541 19.0531C78.876 19.0531 90.5361 23.8871 99.3252 32.6761C108.085 41.4652 113.358 53.1254 113.358 65.5472C113.358 91.1527 92.0596 111.983 66.4541 111.983Z" fill="#0DC143"/>
+        </svg>        
+    </a>
+      
+  </div>
+  <div id="to-top">
+    <svg style="width: 45px;" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12.5" cy="12.5" r="12.5" fill="#FEFEFE"/>
+      <path d="M0 12.5C0 5.59476 5.59476 0 12.5 0C19.4052 0 25 5.59476 25 12.5C25 19.4052 19.4052 25 12.5 25C5.59476 25 0 19.4052 0 12.5ZM14.7177 18.3468V12.5H18.2913C18.8306 12.5 19.1028 11.8448 18.7198 11.4667L12.9284 5.70565C12.6915 5.46875 12.3135 5.46875 12.0766 5.70565L6.28024 11.4667C5.89718 11.8498 6.16936 12.5 6.70867 12.5H10.2823V18.3468C10.2823 18.6794 10.5544 18.9516 10.8871 18.9516H14.1129C14.4456 18.9516 14.7177 18.6794 14.7177 18.3468Z" fill="url(#paint0_linear_301_521)"/>
+      <defs>
+      <linearGradient id="paint0_linear_301_521" x1="-3.13901" y1="2.87356" x2="30.4688" y2="5.27998" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DF3DD6"/>
+      <stop offset="1" stop-color="#3AD3D9"/>
+      </linearGradient>
+      </defs>
+      </svg>
+      
+  </div>
+
+<!-- to top script -->
+
+<script>
+  let toTopBtn = document.getElementById('to-top');
+  window.onscroll = ()=>{
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+      toTopBtn.style.right = '35px'
+    }else{
+      toTopBtn.style.right = '-50px'
+    }
+  }
+  toTopBtn.addEventListener('click',()=>{
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  })
+</script>
 
 <!-- mobile menu scripts -->
   <script>

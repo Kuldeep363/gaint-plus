@@ -1,9 +1,18 @@
 {% extends 'website/base.html' %}
 {% load static %}
-
+{% load i18n %}
 {% block title %}
   <title>Gaint Plus</title>
 {% endblock %}
+{% block css %}
+{% if LANGUAGE_CODE == 'ar' %}
+  <style>
+    .form-floating>label{
+      right: 0;
+    }
+  </style>
+{% endif %}
+    {% endblock  %}
 
 {% block container %}
 
@@ -35,14 +44,14 @@
 
           <div class="mt-3">
             <h1 >
-              Next Generation <br>
-              Smart Rooms
+              {% trans "Next Generation" %}  <br>
+              {% trans "Smart Rooms" %} 
             </h1>
           </div>
 
           <div class="mt-4">
             <p class="sub-text">
-              Specialists in designing smart rooms and guest rooms and implementing them on demand, as well as a coffee corner, keyboards, special mice, and more.
+              {% trans "Specialists in designing smart rooms and guest rooms and implementing them on demand, as well as a coffee corner, keyboards, special mice, and more." %} 
             </p>
           </div>
 
@@ -53,7 +62,7 @@
                   Contact Now
                 </span>
               </a>
-              <a class="stroke-btn mt-3" href="#">
+              <a class="stroke-btn mt-3" href="https://api.whatsapp.com/send?phone=966547774276&text=Hello,I want to know more about services" target="_blank">
                 <span >
                   <img src="{% static 'website/assets/wa.png' %}" alt="gaint plus whatsapp number" style="width:20px;">
                   WhatsApp Now
@@ -157,6 +166,7 @@
   </div>
   </div>
 
+  
 
   <!-- section 2 -->
   <div id="section-2" >
@@ -546,16 +556,16 @@
         <div data-aos="fade-left" data-aos-duration="1000" style="position: relative;">
           <div>
             <h2>
-              We Built a Next Generation <br> Smart Gaming Rooms
+              {% trans "We Built a Next Generation" %} <br> {% trans "Smart Gaming Rooms" %}
             </h2>
           </div>
           <div class="mt-3">
             <p class="sub-text">
-              We furnish the room according to your budget with everything you need. Specialists in designing smart rooms and guest rooms and implementing them on demand, as well as a coffee corner, keyboards, special mice, and more.We provide technical advice
+              {% trans "We furnish the room according to your budget with everything you need. Specialists in designing smart rooms and guest rooms and implementing them on demand, as well as a coffee corner, keyboards, special mice, and more.We provide technical advice" %}
             </p>
           </div>
           <div class="mt-3">
-            <a class="stroke-btn mt-3" href="#">
+            <a class="stroke-btn mt-3" href="https://api.whatsapp.com/send?phone=966547774276&text=Hello,I want to know more about services" target="_blank">
               <span >
                 <img src="{% static 'website/assets/wa.png' %}" alt="gaint plus whatsapp number" style="width:20px;">
                 WhatsApp Now
@@ -572,184 +582,6 @@
 
   <!-- section 2 end -->
 
-  <!-- our services -->
-
-  <div id="our-services" class="d-flex justify-content-center" style="position:relative;">
-    <img src="{% static 'website/assets/c-1.svg' %}" alt="" style="position:absolute; top:-50px;right: -50px;width: 125px;">
-    <!-- <div style="position:relative;" data-aos="zoom-in" data-aos-duration="1000"> 
-    </div> -->
-  <div class="container85">
-    <div>
-      <div class="d-flex heading mt-5 ">
-        <div >
-          <h2>Our Services</h2>
-        </div>
-      </div>        
-      <div>
-        <p class="sub-text mt-4 d-flex">
-          Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. 
-        </p>
-      </div>
-      <div class="row m-0 mt-5" id="services">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-          <div class="service-container" data-aos="fade-up" data-aos-duration="1000">
-            <div class="service" >
-              <div class="ser-img">
-                <img src="{% static 'website/assets/ser-1.png' %}" alt="gaint-plus services">
-              </div>
-              <div class="body">
-                <div class="title">
-                  <h2>
-                    Professional Setup Design
-                  </h2>
-                </div>
-                <div >
-                  <p class="sub-text">
-                    We can prepare a special corner for coffee in your home with a distinct character that reflects your personal taste, taking into account its fit with your home decor.
-                  </p>
-                </div>
-                <div class="pricing-container mt-2 mb-2">
-                  <div class="pricing">
-                    <span style="text-transform: uppercase;">
-                      399 SAR
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="buy-btn">
-                <a href="/" >
-                    <span>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_31_180)">
-                        <path d="M7.41353 18.121C7.86844 18.121 8.23721 17.7522 8.23721 17.2973C8.23721 16.8424 7.86844 16.4736 7.41353 16.4736C6.95862 16.4736 6.58984 16.8424 6.58984 17.2973C6.58984 17.7522 6.95862 18.121 7.41353 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M16.4741 18.121C16.929 18.121 17.2978 17.7522 17.2978 17.2973C17.2978 16.8424 16.929 16.4736 16.4741 16.4736C16.0192 16.4736 15.6504 16.8424 15.6504 17.2973C15.6504 17.7522 16.0192 18.121 16.4741 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M0.823242 0.82373H4.11798L6.32545 11.8529C6.40077 12.2321 6.60708 12.5727 6.90825 12.8152C7.20942 13.0576 7.58626 13.1864 7.97282 13.179H15.979C16.3656 13.1864 16.7424 13.0576 17.0436 12.8152C17.3448 12.5727 17.5511 12.2321 17.6264 11.8529L18.9443 4.94215H4.94166" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_31_180">
-                        <rect width="19.7684" height="19.7684" fill="white"/>
-                        </clipPath>
-                        </defs>
-                      </svg>                        
-                    </span>
-                    <span class="ms-2">
-                      Buy now
-                    </span>
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-          <div class="service-container" data-aos="fade-up" data-aos-duration="1000">
-            <div class="service" >
-              <div class="ser-img">
-                <img src="{% static 'website/assets/ser-2.png' %}" alt="gaint-plus services">
-              </div>
-              <div class="body">
-                <div class="title">
-                  <h2>
-                    Coffee Corner Design
-                  </h2>
-                </div>
-                <div >
-                  <p class="sub-text">
-                    We can prepare a special corner for coffee in your home with a distinct character that reflects your personal taste, taking into account its fit with your home decor.
-                  </p>
-                </div>
-                <div class="pricing-container mt-2 mb-2">
-                  <div class="pricing">
-                    <span style="text-transform: uppercase;">
-                      399 SAR
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="buy-btn">
-                <a href="" >
-                    <span>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_31_180)">
-                        <path d="M7.41353 18.121C7.86844 18.121 8.23721 17.7522 8.23721 17.2973C8.23721 16.8424 7.86844 16.4736 7.41353 16.4736C6.95862 16.4736 6.58984 16.8424 6.58984 17.2973C6.58984 17.7522 6.95862 18.121 7.41353 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M16.4741 18.121C16.929 18.121 17.2978 17.7522 17.2978 17.2973C17.2978 16.8424 16.929 16.4736 16.4741 16.4736C16.0192 16.4736 15.6504 16.8424 15.6504 17.2973C15.6504 17.7522 16.0192 18.121 16.4741 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M0.823242 0.82373H4.11798L6.32545 11.8529C6.40077 12.2321 6.60708 12.5727 6.90825 12.8152C7.20942 13.0576 7.58626 13.1864 7.97282 13.179H15.979C16.3656 13.1864 16.7424 13.0576 17.0436 12.8152C17.3448 12.5727 17.5511 12.2321 17.6264 11.8529L18.9443 4.94215H4.94166" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_31_180">
-                        <rect width="19.7684" height="19.7684" fill="white"/>
-                        </clipPath>
-                        </defs>
-                      </svg>                        
-                    </span>
-                    <span class="ms-2">
-                      Buy now
-                    </span>
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-          <div class="service-container" data-aos="fade-up" data-aos-duration="1000">
-            <div class="service" >
-              <div class="ser-img">
-                <img src="{% static 'website/assets/ser-3.png' %}" alt="gaint-plus services">
-              </div>
-              <div class="body">
-                <div class="title">
-                  <h2>
-                    Implementation of the Set
-                  </h2>
-                </div>
-                <div>
-                  <p class="sub-text">
-                    We can prepare a special corner for coffee in your home with a distinct character that reflects your personal taste, taking into account its fit with your home decor.
-                  </p>
-                </div>
-                <div class="pricing-container mt-2 mb-2">
-                  <div class="pricing">
-                    <span style="text-transform: uppercase;">
-                      399 SAR
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="buy-btn">
-                <a href="" >
-                    <span>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_31_180)">
-                        <path d="M7.41353 18.121C7.86844 18.121 8.23721 17.7522 8.23721 17.2973C8.23721 16.8424 7.86844 16.4736 7.41353 16.4736C6.95862 16.4736 6.58984 16.8424 6.58984 17.2973C6.58984 17.7522 6.95862 18.121 7.41353 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M16.4741 18.121C16.929 18.121 17.2978 17.7522 17.2978 17.2973C17.2978 16.8424 16.929 16.4736 16.4741 16.4736C16.0192 16.4736 15.6504 16.8424 15.6504 17.2973C15.6504 17.7522 16.0192 18.121 16.4741 18.121Z" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M0.823242 0.82373H4.11798L6.32545 11.8529C6.40077 12.2321 6.60708 12.5727 6.90825 12.8152C7.20942 13.0576 7.58626 13.1864 7.97282 13.179H15.979C16.3656 13.1864 16.7424 13.0576 17.0436 12.8152C17.3448 12.5727 17.5511 12.2321 17.6264 11.8529L18.9443 4.94215H4.94166" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_31_180">
-                        <rect width="19.7684" height="19.7684" fill="white"/>
-                        </clipPath>
-                        </defs>
-                      </svg>                        
-                    </span>
-                    <span class="ms-2">
-                      Buy now
-                    </span>
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <!-- our services end -->
 
 
   <!-- our products -->
@@ -758,7 +590,7 @@
     <div class="container85">
       <div>
         <div class="heading mt-5 mb-4 d-flex">
-          <h2>Our Products</h2>
+          <h2>  {% trans "Our Products" %}</h2>
         </div>        
         <div class="row m-0 mt-5 mb-5" id="products">
           <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
@@ -769,7 +601,7 @@
                   <div class="overlay">
                     <div class="title">
                       <h2>
-                        Professional Setup Design
+                          {% trans "Professional Setup Design" %}
                       </h2>
                     </div>
                     <div class="buy-btn">
@@ -789,7 +621,7 @@
                             </svg>                        
                           </span>
                           <span class="ms-2">
-                            Buy now
+                              {% trans "Buy now" %}
                           </span>
                       </a>
                     </div>
@@ -806,7 +638,7 @@
                   <div class="overlay">
                     <div class="title">
                       <h2>
-                        Professional Setup Design
+                          {% trans "Professional Setup Design" %}
                       </h2>
                     </div>
                     <div class="buy-btn">
@@ -826,7 +658,7 @@
                             </svg>                        
                           </span>
                           <span class="ms-2">
-                            Buy now
+                              {% trans "Buy now" %}
                           </span>
                       </a>
                     </div>
@@ -843,7 +675,7 @@
                   <div class="overlay">
                     <div class="title">
                       <h2>
-                        Professional Setup Design
+                          {% trans "Professional Setup Design" %}
                       </h2>
                     </div>
                     <div class="buy-btn">
@@ -863,7 +695,7 @@
                             </svg>                        
                           </span>
                           <span class="ms-2">
-                            Buy now
+                              {% trans "Buy now" %}
                           </span>
                       </a>
                     </div>
@@ -876,7 +708,7 @@
         <div class="text-center mb-4">
           <a class="stroke-btn mt-3" href="#" >
             <span >
-              View All Products
+                {% trans "View All Products" %}
             </span>
           </a>
         </div>
@@ -889,189 +721,134 @@
 
   <!-- advantages -->
 
-  <div id="our-advantages" class="d-flex justify-content-center">
-    <div class="container85">
-      <div>
+  <div id="our-advantages" class="mt-4 mb-4" >
+    <div class="d-flex justify-content-center">
+      <div class="container85">
         <div class="d-flex heading mt-5">
           <div >
-            <h2>Advantages of Buying a Design</h2>
+            <h2>  {% trans "Advantages of Buying a Design" %}</h2>
           </div>
-          </div>
-          <div>
-            <p class="sub-text mt-4 d-flex">
-            Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. 
-            </p>
-          </div>  
-        <div class="row m-0 mt-5 " id="advantages">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-            <div class="adv-container" data-aos="fade-up" data-aos-duration="1000">
-              <div class="adv" >
-
-                <div class="adv-img mb-5">
-                  <img src="{% static 'website/assets/adv-1.png' %}" alt="gaint-plus services">
+        </div>
+        <div>
+          <p class="sub-text mt-4 d-flex">
+            {% trans "Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. " %}
+          </p>
+        </div>  
+      
+    
+    <div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+          <div class="row m-0 mt-5 justify-content-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+              <div class="adv-wrapper mb-4">
+                <div class="adv-wrap" id="adv-1" data-aos="fade-right" data-aos-duration="1000">
+                  <div class="d-flex align-items-center">
+                    <div class="adv-img ">
+                      <img src="{% static 'website/assets/adv-1.png' %}" alt="gaint-plus advantages">
+                    </div>
+                    <div class="adv-heading me-2 ms-2">
+                      <p class="mb-0">  {% trans "Real view" %}</p>
+                    </div>
+                    <div class="adv-des me-2 ms-2">
+                      <p class="mb-0">  {% trans "It gives you a view of the place and see it as if it were real." %}</p>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="title mt-5">
-                  <h2>
-                    Real View
-                  </h2>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+              
+              <div class="adv-wrapper mb-4">
+                <div class="adv-wrap" id="adv-2"  data-aos="fade-right" data-aos-duration="2000">
+                  <div class="d-flex align-items-center">
+                    <div class="adv-img ">
+                      <img src="{% static 'website/assets/adv-2.png' %}" alt="gaint-plus advantages">
+                    </div>
+                    <div class="adv-heading me-2 ms-2">
+                      <p class="mb-0">  {% trans "Experience in VR" %}</p>
+                    </div>
+                    <div class="adv-des me-2 ms-2">
+                      <p class="mb-0">  {% trans "Live the virtual reality of your room before you build it." %}</p>
+                    </div>
+                  </div>
                 </div>
-
-                <div >
-                  <p class="sub-text">
-                    It gives you a view of the place and see it as if it were real.
-                  </p>
-                </div>
-
-                <div class="adv-bkg">
-                  <div class="position-relative" style="height: 100%;">
-                    <div class="bkg-layer"></div>
-                    <img src="{% static 'website/assets/bkg-circle.png' %}" alt="" style="width: 100%;">
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+              <div class="adv-wrapper mb-4">
+                <div class="adv-wrap" id="adv-3" data-aos="fade-right" data-aos-duration="1000">
+                  <div class="d-flex align-items-center">
+                    <div class="adv-img ">
+                      <img src="{% static 'website/assets/adv-3.png' %}" alt="gaint-plus advantages">
+                    </div>
+                    <div class="adv-heading me-2 ms-2">
+                      <p class="mb-0">  {% trans "Get Full clarity" %}</p>
+                    </div>
+                    <div class="adv-des me-2 ms-2">
+                      <p class="mb-0">  {% trans "It includes the clarity of furniture, lighting and colors from inside the room." %}</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-            <div class="adv-container" data-aos="fade-up" data-aos-duration="1000">
-              <div class="adv" >
-
-                <div class="adv-img mb-5">
-                  <img src="{% static 'website/assets/adv-2.png' %}" alt="gaint-plus services">
-                </div>
-
-                <div class="title mt-5">
-                  <h2>
-                    Experience in VR
-                  </h2>
-                </div>
-
-                <div >
-                  <p class="sub-text">
-                    Live the virtual reality of your room before you build it.
-                  </p>
-                </div>
-
-                <div class="adv-bkg">
-                  <div class="position-relative" style="height: 100%;">
-                    <div class="bkg-layer"></div>
-                    <img src="{% static 'website/assets/bkg-circle.png' %}" alt="" style="width: 100%;">
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 d-flex align-items-center justify-content-center">
+          <div class="advantages text-center" style="position: relative;" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="{% static 'website/assets/adv.png' %}" alt="gaint plus advantages" id="adv_img">
+            <div id="adv_bkg"></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+          <div class="row m-0 mt-5 justify-content-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+              <div class="adv-wrapper mb-4">
+                <div class="adv-wrap" id="adv-4" data-aos="fade-left" data-aos-duration="1000">
+                  <div class="d-flex align-items-center">
+                    <div class="adv-img">
+                      <img src="{% static 'website/assets/adv-4.png' %}" alt="gaint-plus advantages">
+                    </div>
+                    <div class="adv-heading me-2 ms-2">
+                      <p class="mb-0">  {% trans "Check Products" %}</p>
+                    </div>
+                    <div class="adv-des me-2 ms-2">
+                      <p class="mb-0">  {% trans "Includes adding real products from their original source with a link." %}</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-            <div class="adv-container" data-aos="fade-up" data-aos-duration="1000">
-              <div class="adv" >
-
-                <div class="adv-img mb-5">
-                  <img src="{% static 'website/assets/adv-3.png' %}" alt="gaint-plus services">
-                </div>
-
-                <div class="title mt-5">
-                  <h2>
-                    Get Full clarity
-                  </h2>
-                </div>
-
-                <div >
-                  <p class="sub-text">
-                    It includes the clarity of furniture, lighting and colors from inside the room.
-                  </p>
-                </div>
-
-                <div class="adv-bkg">
-                  <div class="position-relative" style="height: 100%;">
-                    <div class="bkg-layer"></div>
-                    <img src="{% static 'website/assets/bkg-circle.png' %}" alt="" style="width: 100%;">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+              <div class="adv-wrapper mb-4">
+                <div class="adv-wrap" id="adv-5" data-aos="fade-left" data-aos-duration="2000">
+                  <div class="d-flex align-items-center">
+                    <div class="adv-img">
+                      <img src="{% static 'website/assets/adv-5.png' %}" alt="gaint-plus advantages">
+                    </div>
+                    <div class="adv-heading me-2 ms-2">
+                      <p class="mb-0">  {% trans "HD Results" %}</p>
+                    </div>
+                    <div class="adv-des me-2 ms-2">
+                      <p class="mb-0">  {% trans "High-quality images of designs with clear details." %}</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-            <div class="adv-container" data-aos="fade-up" data-aos-duration="1000">
-              <div class="adv" >
-
-                <div class="adv-img mb-5">
-                  <img src="{% static 'website/assets/adv-4.png' %}" alt="gaint-plus services">
-                </div>
-
-                <div class="title mt-5">
-                  <h2>
-                    Add Products to Check
-                  </h2>
-                </div>
-
-                <div >
-                  <p class="sub-text">
-                    Includes adding real products from their original source with a link.
-                  </p>
-                </div>
-
-                <div class="adv-bkg">
-                  <div class="position-relative" style="height: 100%;">
-                    <div class="bkg-layer"></div>
-                    <img src="{% static 'website/assets/bkg-circle.png' %}" alt="" style="width: 100%;">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-            <div class="adv-container" data-aos="fade-up" data-aos-duration="1000">
-              <div class="adv" >
-
-                <div class="adv-img mb-5">
-                  <img src="{% static 'website/assets/adv-5.png' %}" alt="gaint-plus services">
-                </div>
-
-                <div class="title mt-5">
-                  <h2>
-                    High Quality Results
-                  </h2>
-                </div>
-
-                <div >
-                  <p class="sub-text">
-                    Also, high-quality images of designs with clear details.
-                  </p>
-                </div>
-
-                <div class="adv-bkg">
-                  <div class="position-relative" style="height: 100%;">
-                    <div class="bkg-layer"></div>
-                    <img src="{% static 'website/assets/bkg-circle.png' %}" alt="" style="width: 100%;">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-            <div class="adv-container" data-aos="fade-up" data-aos-duration="1000">
-              <div class="adv" >
-
-                <div class="adv-img mb-5">
-                  <img src="{% static 'website/assets/adv-6.png' %}" alt="gaint-plus services">
-                </div>
-
-                <div class="title mt-5">
-                  <h2>
-                    Affordable
-                  </h2>
-                </div>
-
-                <div >
-                  <p class="sub-text">
-                    Our designs that fit your budget to avoid future mistakes.
-                  </p>
-                </div>
-
-                <div class="adv-bkg">
-                  <div class="position-relative" style="height: 100%;">
-                    <div class="bkg-layer"></div>
-                    <img src="{% static 'website/assets/bkg-circle.png' %}" alt="" style="width: 100%;">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+              <div class="adv-wrapper mb-4">
+                <div class="adv-wrap" id="adv-6" data-aos="fade-left" data-aos-duration="1000">
+                  <div class="d-flex align-items-center">
+                    <div class="adv-img">
+                      <img src="{% static 'website/assets/adv-6.png' %}" alt="gaint-plus advantages">
+                    </div>
+                    <div class="adv-heading me-2 ms-2">
+                      <p class="mb-0">  {% trans "Affordable" %}</p>
+                    </div>
+                    <div class="adv-des me-2 ms-2">
+                      <p class="mb-0">  {% trans "Our designs that fit your budget to avoid future mistakes." %}</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1080,6 +857,8 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
   </div>
 
   <!-- advantages end -->
@@ -1092,12 +871,12 @@
       <div>
         <div class="d-flex heading mt-5">
           <div >
-            <h2>Some of Our Team Work</h2>
+            <h2>{% trans "Some of Our Team Work" %}</h2>
           </div>
         </div>
         <div>
           <p class="sub-text mt-4 d-flex">
-            Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. 
+            {% trans "Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast." %} 
           </p>
         </div> 
         <div class="mt-5 mb-5" id="work">
@@ -1138,15 +917,15 @@
       <div>
         <div class="d-flex heading mt-5">
           <div >
-            <h2>Contact With Us</h2>
+            <h2>{% trans "" %}Contact With Us</h2>
           </div>
         </div>
         <div>
           <p class="sub-text mt-4 d-flex">
-            Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. 
+            {% trans "" %}Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. 
           </p>
         </div>
-        <div class="contact-icons">
+        <!-- <div class="contact-icons">
           <div class="row m-0 mt-5">
             <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
               <a href="mailto:gaint">
@@ -1185,44 +964,44 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div id="contact-form" class="mb-5">
           <div class="row m-0 mt-5 justify-content-center">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" >
               <div class="contact-form d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
                 <div class="form">
-                  <h2 class="mb-3">Get in touch</h2>
+                  <h2 class="mb-3">{% trans "Get in touch" %}</h2>
                   <form >
                     <div class="mb-3 form-floating">
                       <input type="text" placeholder="You name" class="form-control" id="name">
-                      <label class="form-label" for="name">Name</label>
+                      <label class="form-label" for="name">{% trans "Name" %}</label>
                     </div>
                     <div class="mb-3">
                       <div class="row g-3">
                         <div class="col-md">
                           <div class="form-floating">
                             <input type="email" id="email" class="form-control" placeholder="Your email address">
-                            <label class="form-label" for="email">Email</label>
+                            <label class="form-label" for="email">{% trans "Email" %}</label>
                           </div>
                         </div>
                         <div class="col-md">
                           <div class="form-floating">
                             <input type="tel" id="number" class="form-control" placeholder="Your phone number">
-                            <label class="form-label" for="number">Number</label>
+                            <label class="form-label" for="number">{% trans "Number" %}</label>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="mb-3 form-floating">
                       <input type="text" class="form-control" id="subject" placeholder="Subject">
-                      <label class="form-label" for="subject">Subject</label>
+                      <label class="form-label" for="subject">{% trans "Subject" %}</label>
                     </div>
                     <div class="mb-3 form-floating">
                       <textarea class="form-control" id="message" placeholder="Your message"></textarea>
-                      <label class="form-label" for="message">Message</label>
+                      <label class="form-label" for="message">{% trans "Message" %}</label>
                     </div>
-                    <button type="button" class="primary-btn-gp" onclick="contact()">Submit</button>
+                    <button type="button" class="primary-btn-gp" onclick="contact()">{% trans "Submit" %}</button>
                   </form>
                 </div>
               </div>

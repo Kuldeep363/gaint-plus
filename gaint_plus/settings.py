@@ -125,7 +125,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# LANGUAGE_CODE = 'en'
+# LANGUAGE_CODE = 'ar'
 
 # LOCALE_PATHS = (
 #    os.path.join(BASE_DIR, 'locale/'),
