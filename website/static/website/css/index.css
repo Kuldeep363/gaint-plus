@@ -29,7 +29,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'gaint-plus', sans-serif;
     color: var(--white);
 }
 /* width */
@@ -674,6 +674,10 @@ nav#mobile-navbar{
     width: 100%;
     background-size: cover;
 }
+footer{
+    background: url('../assets/hero-bkg.png') center center no-repeat;
+    background-size: cover;
+}
 .footer-items ul li a{
     transition: 0.3s all ease-in-out;
 }
@@ -751,6 +755,10 @@ nav#mobile-navbar{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
+
+  #hero-section video{
+    width: 100vw;
+  }
   
 
 @media(max-width:1600px){
@@ -787,6 +795,10 @@ nav#mobile-navbar{
         text-align: center;
         font-size: 0.9rem;
     }
+    #hero-section video{
+        height: 100vh;
+        width: unset;
+      }
     #our-advantages .adv-wrap .adv-des p{
         text-align: left;
     }

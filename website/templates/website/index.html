@@ -17,7 +17,15 @@
 {% block container %}
 
   <!-- hero section -->
-  <div id="hero-section" class="d-flex justify-content-center mb-5">
+  <div id="hero-section" class="d-flex justify-content-center mb-5" style="position: relative;">
+    <div class="video-container" style="position: absolute; top:-125px;z-index:-2;opacity:0.3;">
+  
+      <video autoplay  muted loop="true" >
+        <source type="video/mp4" src="{% static 'website/assets/bkg.mp4' %}">
+        <!-- <source type="video/webm" src="">
+        <source type="video/ogg" src=""> -->
+      </video>
+    </div>
     
   <div class="container85">
     <div class="row mb-5" >
@@ -164,6 +172,7 @@
       </div>
     </div>
   </div>
+
   </div>
 
   
@@ -594,7 +603,7 @@
         </div>        
         <div class="row m-0 mt-5 mb-5" id="products">
           <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-            <div class="products-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="products-container" data-aos="fade-left" data-aos-duration="1000">
               <div class="products" >
                 <div class="prod-img">
                   <img src="{% static 'website/assets/prod-1.png' %}" alt="gaint-plus services">
@@ -631,7 +640,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-            <div class="products-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="products-container" data-aos="zoom-in" data-aos-duration="1000">
               <div class="products" >
                 <div class="prod-img">
                   <img src="{% static 'website/assets/prod-2.png' %}" alt="gaint-plus services">
@@ -668,7 +677,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5">
-            <div class="products-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="products-container" data-aos="fade-right" data-aos-duration="1000">
               <div class="products" >
                 <div class="prod-img">
                   <img src="{% static 'website/assets/prod-3.png' %}" alt="gaint-plus services">
