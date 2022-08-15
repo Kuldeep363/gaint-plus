@@ -39,6 +39,12 @@
 </head>
 <body >
 
+    <div id="pre-loader" >
+      <div class="d-flex justify-content-center align-items-center">
+        <img src="{% static 'website/assets/loader.gif' %}" alt="gaint-plus" >
+      </div>
+    </div>
+
     <!-- navbars -->
     <div id="navbars"  class="d-flex justify-content-center mb-5" style="position: relative;">
     <div class="container85">
@@ -346,16 +352,15 @@
 
   </script>
 
-  <!-- language dropdown scripts -->
-  <!-- <script>
-    
-    let dropdowns = document.querySelectorAll('.change-lang')
-    for(let i=0;i<dropdowns.length;i++){
-        dropdowns[i].addEventListener('onmouseenter',()=>{
-            dropdowns[i].classList.toggle('active')
-        })
+  <!-- preloader -->
+  
+
+  <script>
+    window.onload = ()=>{
+      document.getElementById('pre-loader').style.display = 'none'
+      document.getElementsByTagName('body').style.overflowY = 'scroll'
     }
-  </script> -->
+  </script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

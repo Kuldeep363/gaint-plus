@@ -153,14 +153,14 @@ a{
 .primary-btn-gp{
     padding: 14px 20px;
     border-radius: 10px;
-    background: url('../assets/btn.svg') no-repeat center center;
+    background: url("../assets/btn.379101e36d6f.svg") no-repeat center center;
     box-shadow: var(--btn-shadow);
     border: none;
     font-weight: 600;
     transition: 0.5s all ease-in-out;
 }
 .primary-btn-gp:hover, .primary-btn-gp:focus{
-    background: url('../assets/btn-hov.svg') no-repeat center center;
+    background: url("../assets/btn-hov.7602ecadca57.svg") no-repeat center center;
     color: var(--white);
 }
 .stroke-btn{
@@ -297,7 +297,7 @@ model-viewer {
 
 }
 #section-2{
-    /* background: url('../assets/bkg.jpg') no-repeat center center; */
+    /* background: url("../assets/bkg.d5ed029d5890.jpg") no-repeat center center; */
     background-attachment: fixed;
     background-size: cover;
 }
@@ -651,7 +651,7 @@ nav#mobile-navbar{
 }
 
 #contact{
-    background: url('../assets/contact-bkg.jpg') center top no-repeat;
+    background: url("../assets/contact-bkg.c97228282fec.jpg") center top no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -680,7 +680,7 @@ nav#mobile-navbar{
     background-size: cover;
 }
 footer{
-    background: url('../assets/hero-bkg.png') center center no-repeat;
+    background: url("../assets/hero-bkg.379b4f6e1a2c.png") center center no-repeat;
     background-size: cover;
 }
 .footer-items ul li a{

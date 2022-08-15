@@ -20,6 +20,7 @@ html{
 
 body{
     overflow-x: hidden;
+    overflow-y: hidden;
     background-color: var(--black)!important;
 }
 
@@ -30,6 +31,20 @@ body{
     font-family: 'gaint-plus', sans-serif;
     color: var(--white);
 }
+
+#pre-loader div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1000;
+}
+
+
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 7px;
