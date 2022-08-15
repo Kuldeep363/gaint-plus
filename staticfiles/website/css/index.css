@@ -21,8 +21,6 @@ html{
 body{
     overflow-x: hidden;
     background-color: var(--black)!important;
-    background: url('../assets/abs-bkg.png') center center no-repeat;
-    background-size: cover;
 }
 
 *{
@@ -265,14 +263,6 @@ model-viewer {
 .sub-text{
     color: #919DA4;
 }
-/* 
-.hero-1::before{
-    content: '';
-    position: absolute;
-    left: -100px;
-    height: 100%;
-    background: url('../assets/hero-bkg-1.png');
-} */
 
 #room-svg svg{
     width: 100%;
