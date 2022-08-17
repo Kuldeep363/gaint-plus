@@ -152,14 +152,14 @@ a{
 .primary-btn-gp{
     padding: 14px 20px;
     border-radius: 10px;
-    background: url('../assets/btn.svg') no-repeat center center;
+    background: url('https://drive.google.com/uc?export=view&id=1ensW9Pz88nDND_xbqxWbnXQvmMEQCmPI') no-repeat center center;
     box-shadow: var(--btn-shadow);
     border: none;
     font-weight: 600;
     transition: 0.5s all ease-in-out;
 }
 .primary-btn-gp:hover, .primary-btn-gp:focus{
-    background: url('../assets/btn-hov.svg') no-repeat center center;
+    background: url('https://drive.google.com/uc?export=view&id=1xPoFJ7yiy-ir3-lIfq14G0gEl4uORkKQ') no-repeat center center;
     color: var(--white);
 }
 .stroke-btn{
@@ -296,7 +296,6 @@ model-viewer {
 
 }
 #section-2{
-    /* background: url('../assets/bkg.jpg') no-repeat center center; */
     background-attachment: fixed;
     background-size: cover;
 }
@@ -324,7 +323,6 @@ model-viewer {
 
 nav#mobile-navbar{
     display: none;
-    /* z-index: 100; */
 }
 
 /* HAMBURGER MENU ANIMATION */
@@ -351,7 +349,6 @@ nav#mobile-navbar{
   
   /* ROTATE FIRST BAR */
   .active .menu-bar1 {
-    /* transform: rotate(-45deg) translate(-7px, 8px); */
     transform: rotate(-45deg) translate(-0.7rem, 0.8rem);
   }
   
@@ -362,7 +359,6 @@ nav#mobile-navbar{
   
   /* ROTATE LAST BAR */
   .active .menu-bar3 {
-    /* transform: rotate(45deg) translate(-6px, -8px); */
     transform: rotate(45deg) translate(-0.6rem, -0.8rem);
   }
 
@@ -655,7 +651,7 @@ nav#mobile-navbar{
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../assets/contact_bkg.gif') center top no-repeat;
+    background: url('https://drive.google.com/uc?export=view&id=1_At5Cn326h-YcksXH9R7ny5IjFhZyfR1') center top no-repeat;
     background-size: cover;
     background-attachment: fixed;
     z-index: -5;
@@ -670,7 +666,6 @@ nav#mobile-navbar{
     margin: 20px 10px;
 }
 #contact-form input, #contact-form textarea{
-    /* height: 45px; */
     background-color: transparent;
     border-radius: 10px;
     border: 1px solid var(--white);
@@ -686,7 +681,7 @@ nav#mobile-navbar{
     background-size: cover;
 }
 footer{
-    background: url('../assets/hero-bkg.png') center center no-repeat;
+    background: url('https://drive.google.com/uc?export=view&id=1ns1hzwUmkcnfuBA9tIOA-n8hqdlscLxq') center center no-repeat;
     background-size: cover;
 }
 .footer-items ul li a{
@@ -791,7 +786,7 @@ footer{
     width: 100%;
     height: 70vh;
     z-index: -3;
-    background: url('../assets/service_bkg.png') center center no-repeat;
+    background: url('https://drive.google.com/uc?export=view&id=1DqF1KwBGj9AiqlrT0KyZDWy2RWy3b1Id') center center no-repeat;
     background-size: cover;
   }
 
