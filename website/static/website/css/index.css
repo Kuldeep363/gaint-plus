@@ -807,9 +807,10 @@ footer{
   #brochure_bkg{
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 50%;
     left: 0;
-    height: 100%;
+    transform: translateY(-50%);
+    /* height: 100%; */
     z-index: -3;
     opacity: 0.3;
   }
