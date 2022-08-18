@@ -151,7 +151,7 @@ a{
 
 .primary-btn-gp{
     padding: 14px 20px;
-    border-radius: 10px;
+    border-radius: 50px;
     background: url('https://drive.google.com/uc?export=view&id=1ensW9Pz88nDND_xbqxWbnXQvmMEQCmPI') no-repeat center center;
     box-shadow: var(--btn-shadow);
     border: none;
@@ -183,7 +183,7 @@ a{
         color: #fff;
         -webkit-transition: all 1s cubic-bezier(.16,1,.3,1);
         transition: all 1s cubic-bezier(.16,1,.3,1);
-        border-radius: 10px;
+        border-radius: 50px;
 }
 .stroke-btn::before {
     content: '';
@@ -210,7 +210,7 @@ a{
     transform: translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 50px;
     z-index: -3;
     background: var(--border);
     -webkit-transition: all 1s cubic-bezier(.16,1,.3,1);
@@ -230,7 +230,7 @@ a{
     z-index: -2;
     opacity: 1;
     background: #0B1628;
-    border-radius: 10px;
+    border-radius: 50px;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
@@ -385,10 +385,6 @@ nav#mobile-navbar{
 /* services */
 
 
-.service{
-    position: relative;
-}
-
 #services .service-container, #products .products-container, #advantages .adv-container{
     display: flex;
     height: 100%;
@@ -408,17 +404,35 @@ nav#mobile-navbar{
     box-shadow: 0px 5px 25px rgba(223, 61, 215, 0.1);
     transform: translateY(-10px);
 }
+
+.service{
+    position: relative;
+    padding: 15px;
+    background-color: var(--black);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+}
+
 .service img, .products img{
     width: 100%;
 }
-.service .body, .products .body, .adv .body{
+.service img{
+    border-radius: 20px;
+}
+.products .body, .adv .body{
     margin: 1rem;
+}
+.service .body{
+    margin: 1rem 0;
 }
 .service .buy-btn a, .products .buy-btn a{
     display: block;
     padding: 20px 20px;
     background: var(--border);
     font-weight: 600;
+}
+.service .buy-btn a{
+    border-radius: 50px;
 }
 /* .service .buy-btn {
     position: absolute;
