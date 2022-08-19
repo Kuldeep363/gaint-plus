@@ -5,6 +5,11 @@
   <title>Gaint Plus</title>
 {% endblock %}
 {% block css %}
+ <!-- Link Swiper's CSS -->
+ <link
+ rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
 {% if LANGUAGE_CODE == 'ar' %}
   <style>
     .form-floating>label{
@@ -731,9 +736,9 @@
    <!-- guide -->
 
    <div id="brochure" style="position: relative;overflow: hidden;" class="d-flex justify-content-center align-items-center mt-5  p-5" data-aos="fade-up" data-aos-duration="1000">
-    <img id="brochure_bkg" src="https://drive.google.com/uc?export=view&id=1M8ljHIf0OwdvQJpEPzcyP1y5way-QBR2" alt="gaint plus download guide">
+    <img id="brochure_bkg" src="https://drive.google.com/uc?export=view&id=19B_QDfx5iQYasKKKoKs91YkOFLVg0OvG" alt="gaint plus download guide">
 
-    <div class="text-center" style="    padding: 15px;background: rgb(11 22 40 / 20%);border-radius: 20px;backdrop-filter: blur(7px);">
+    <div class="text-center" >
       <h1>{% trans "Loved our products!" %}</h1>
       <p>{% trans "Want to know how you can get these beautiful designs?" %}</p>
       <a class="stroke-btn mt-3" href="{% static 'website/assets/gaint-plus.pdf' %}" target="_blank">
@@ -750,7 +755,7 @@
 
   <!-- advantages -->
 
-  <div id="our-advantages" class="mt-4 mb-4" >
+  <div id="our-advantages" class="mt-4 mb-5" >
     <div class="d-flex justify-content-center">
       <div class="container85">
         <div class="d-flex heading mt-5">
@@ -898,37 +903,57 @@
   <div id="our-work" class="d-flex justify-content-center mb-5">
     <div class="container85">
       <div>
-        <div class="d-flex heading mt-5">
-          <div >
-            <h2>{% trans "Some of Our Team Work" %}</h2>
+        
+        <div class="mb-5 row">
+          <div id="work-sec-img" class="col-12 col-sm-12 col-md-12">
+            <div >
+              <img src="https://drive.google.com/uc?export=view&id=1V1zHEgMKovi2h1-DgwmpLorGumU6VL9w" alt="gaint plus" style="width: 100%;">
+            </div>
           </div>
-        </div>
-        <div>
-          <p class="sub-text mt-4 d-flex">
-            {% trans "Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast." %} 
-          </p>
-        </div> 
-        <div class="mt-5 mb-5" id="work">
-          <div class="work-scroll pb-4" style="overflow-x: scroll;">
-            <div class="d-flex">
-              <a href="https://drive.google.com/uc?export=view&id=1K2K9DYrxA2iar6iEvreUHF_WAyViiwCT" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="flip-left" data-aos-duration="1000">
-                <img src="https://drive.google.com/uc?export=view&id=1K2K9DYrxA2iar6iEvreUHF_WAyViiwCT" alt="gaint-plus work">
-              </a>
-              <a href="https://drive.google.com/uc?export=view&id=1qJU7wajMsIAfuaDXE-_eKkh7ygYoGicb" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="flip-right" data-aos-duration="1000">
-                <img src="https://drive.google.com/uc?export=view&id=1qJU7wajMsIAfuaDXE-_eKkh7ygYoGicb" alt="gaint-plus work">
-              </a>
-              <a href="https://drive.google.com/uc?export=view&id=1_8z_YsY0QsYKwv5HSCmQnl96iJpjXHim" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="flip-left" data-aos-duration="1000">
-                <img src="https://drive.google.com/uc?export=view&id=1_8z_YsY0QsYKwv5HSCmQnl96iJpjXHim" alt="gaint-plus work">
-              </a>
-              <a href="https://drive.google.com/uc?export=view&id=1rsFDdnsqzXY-ZQm3UInOByZMlBFibA1D" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="flip-right" data-aos-duration="1000">
-                <img src="https://drive.google.com/uc?export=view&id=1rsFDdnsqzXY-ZQm3UInOByZMlBFibA1D" alt="gaint-plus work">
-              </a>
-              <a href="https://drive.google.com/uc?export=view&id=1tKvmcwObvoWDLdxJ8k5pZ62rNxls_LZU" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="flip-left" data-aos-duration="1000">
-                <img src="https://drive.google.com/uc?export=view&id=1tKvmcwObvoWDLdxJ8k5pZ62rNxls_LZU" alt="gaint-plus work">
-              </a>
-              <a href="https://drive.google.com/uc?export=view&id=1xXyQZTh67k_P445FWTnNyd4rB02Bx9fK" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="flip-right" data-aos-duration="1000">
-                <img src="https://drive.google.com/uc?export=view&id=1xXyQZTh67k_P445FWTnNyd4rB02Bx9fK" alt="gaint-plus work">
-              </a>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="d-flex heading mt-5">
+              <div >
+                <h2>{% trans "Some of Our Team Work" %}</h2>
+              </div>
+            </div>
+            <div>
+              <p class="sub-text mt-4 d-flex">
+                {% trans "Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast." %} 
+              </p>
+            </div>
+            <div class=" mt-5 pb-4 swiper mySwiper" >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <a href="https://drive.google.com/uc?export=view&id=1K2K9DYrxA2iar6iEvreUHF_WAyViiwCT" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="zoom-in" data-aos-duration="1000">
+                  <img src="https://drive.google.com/uc?export=view&id=1K2K9DYrxA2iar6iEvreUHF_WAyViiwCT" alt="gaint-plus work">
+                </a>
+                </div>
+                <div class="swiper-slide">
+                <a href="https://drive.google.com/uc?export=view&id=1qJU7wajMsIAfuaDXE-_eKkh7ygYoGicb" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="zoom-in" data-aos-duration="1000">
+                  <img src="https://drive.google.com/uc?export=view&id=1qJU7wajMsIAfuaDXE-_eKkh7ygYoGicb" alt="gaint-plus work">
+                </a>
+                </div>
+                <div class="swiper-slide">
+                <a href="https://drive.google.com/uc?export=view&id=1_8z_YsY0QsYKwv5HSCmQnl96iJpjXHim" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="zoom-in" data-aos-duration="1000">
+                  <img src="https://drive.google.com/uc?export=view&id=1_8z_YsY0QsYKwv5HSCmQnl96iJpjXHim" alt="gaint-plus work">
+                </a>
+                </div>
+                <div class="swiper-slide">
+                <a href="https://drive.google.com/uc?export=view&id=1rsFDdnsqzXY-ZQm3UInOByZMlBFibA1D" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="zoom-in" data-aos-duration="1000">
+                  <img src="https://drive.google.com/uc?export=view&id=1rsFDdnsqzXY-ZQm3UInOByZMlBFibA1D" alt="gaint-plus work">
+                </a>
+                </div>
+                <div class="swiper-slide">
+                <a href="https://drive.google.com/uc?export=view&id=1tKvmcwObvoWDLdxJ8k5pZ62rNxls_LZU" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="zoom-in" data-aos-duration="1000">
+                  <img src="https://drive.google.com/uc?export=view&id=1tKvmcwObvoWDLdxJ8k5pZ62rNxls_LZU" alt="gaint-plus work">
+                </a>
+                </div>
+                <div class="swiper-slide">
+                <a href="https://drive.google.com/uc?export=view&id=1xXyQZTh67k_P445FWTnNyd4rB02Bx9fK" class="our-img" data-toggle="lightbox" data-gallery="work-gallery"  data-aos="zoom-in" data-aos-duration="1000">
+                  <img src="https://drive.google.com/uc?export=view&id=1xXyQZTh67k_P445FWTnNyd4rB02Bx9fK" alt="gaint-plus work">
+                </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -937,6 +962,21 @@
     </div>
   </div>
   
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        
+      });
+    </script>
+
+
   <!-- our work end -->
 
  
