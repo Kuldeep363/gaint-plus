@@ -28,8 +28,6 @@
   
       <video autoplay  muted loop="true" poster="https://drive.google.com/uc?export=view&id=17zPIzqKtNt0JC9QvVTBEBGrrFtlyuj9J">
         <source type="video/mp4" src="https://drive.google.com/uc?export=view&id=1ZxuTgszoBvfbPaUsonARHFTKXWuVglWd">
-        <!-- <source type="video/webm" src="">
-        <source type="video/ogg" src=""> -->
       </video>
     </div>
     
@@ -71,12 +69,12 @@
 
           <div class="mt-4">
             <div class="d-flex gp-btns flex-wrap">
-              <a class="primary-btn-gp me-2 ps-5 pe-5 mt-3" href="#contact">
+              <a class="primary-btn-gp me-2 mt-3" href="#contact">
                 <span>
-                  Contact Now
+                  {% trans "Contact Now" %}
                 </span>
               </a>
-              <a class="stroke-btn mt-3" href="https://api.whatsapp.com/send?phone=966547774276&text=Hello,I want to know more about services" target="_blank">
+              <a class="stroke-btn mt-3 me-3" href="https://api.whatsapp.com/send?phone=966547774276&text=Hello,I want to know more about services" target="_blank">
                 <span >
                   <img src="https://drive.google.com/uc?export=view&id=1BnWw6-0XhAVoUqthZOqIUX_XLRyd5bST" alt="gaint plus whatsapp number" style="width:20px;">
                   WhatsApp Now
@@ -763,11 +761,11 @@
             <h2>  {% trans "Advantages of Buying a Design" %}</h2>
           </div>
         </div>
-        <div>
+        <!-- <div>
           <p class="sub-text mt-4 d-flex">
             {% trans "Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. " %}
           </p>
-        </div>  
+        </div>   -->
       
     
     <div>
@@ -916,11 +914,11 @@
                 <h2>{% trans "Some of Our Team Work" %}</h2>
               </div>
             </div>
-            <div>
+            <!-- <div>
               <p class="sub-text mt-4 d-flex">
                 {% trans "Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast." %} 
               </p>
-            </div>
+            </div> -->
             <div class=" mt-5 pb-4 swiper mySwiper" >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -985,7 +983,12 @@
   <!-- contact us -->
 
   <div id="contact" class="d-flex justify-content-center mb-5" style="position: relative;">
-    <div id="contact_bkg"></div>
+    <div id="contact_bkg" style="z-index:-2;opacity:0.3;">
+  
+      <video autoplay  muted loop="true" poster="https://drive.google.com/uc?export=view&id=17zPIzqKtNt0JC9QvVTBEBGrrFtlyuj9J" style="height:100vh;">
+        <source type="video/mp4" src="https://drive.google.com/uc?export=view&id=1ZxuTgszoBvfbPaUsonARHFTKXWuVglWd">
+      </video>
+    </div>
     <div class="container85">
       <div>
         <div class="d-flex heading mt-5">
@@ -993,11 +996,11 @@
             <h2>{% trans "Contact With Us" %}</h2>
           </div>
         </div>
-        <div>
+        <!-- <div>
           <p class="sub-text mt-4 d-flex">
             {% trans "Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast." %} 
           </p>
-        </div>
+        </div> -->
       
 
         <div id="contact-form" class="mb-5">
