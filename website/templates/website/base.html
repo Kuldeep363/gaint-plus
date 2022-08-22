@@ -32,13 +32,15 @@
     <link rel="stylesheet" href="{% static 'website/css/index.css' %}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-      @font-face {
+      
+      
+      /* @font-face {
         font-family: 'gaint-plus';
-        src: url('https://nanoleaf.me/fonts/otf/Nanoleaf-Regular.otf') format('opentype'), url('https://nanoleaf.me/fonts/ttf/Nanoleaf-Regular.ttf') format('truetype'), url('https://nanoleaf.me/fonts/woff/Nanoleaf-Regular.woff') format('woff'), url('https://nanoleaf.me/fonts/woff2/Nanoleaf-Regular.woff2') format('woff2');
+        src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         font-weight: normal;
         font-style: normal;
         font-display: block;
-      }
+      } */
 
     </style>
   
@@ -62,7 +64,7 @@
     <nav id="web-navbar">
         <div class="d-flex justify-content-between pt-4">
         <div>
-            <a href="/">
+            <a href="{% url 'home' %}">
             <img src="https://drive.google.com/uc?export=view&id=16SlMYsWWb0ZiHyNS27akBP0yuVv4vjXN" alt="gaint plus">
             </a>
         </div>
@@ -218,7 +220,7 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
               <div class="footer-sec-1 mt-3">
                 <div class="logo mt-3 mb-3 ">
-                  <a href="/">
+                  <a href="{% url 'home' %}">
                     <img src="https://drive.google.com/uc?export=view&id=16SlMYsWWb0ZiHyNS27akBP0yuVv4vjXN" alt="gaint-logo">
                   </a>
                 </div>
