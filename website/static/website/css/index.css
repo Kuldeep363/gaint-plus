@@ -1,7 +1,139 @@
+/* button {
+    --border-width: 4px;
+    --corner-value: 20px;
+    --cropped-corner: polygon(100% 0, 100% calc(100% - var(--corner-value)), calc(100% - var(--corner-value)) 100%, 0 100%, 0 0);
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    background-color: #060606;
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+  }
+  
+  .wrap {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 20rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .polygon-btn {
+    background: transparent;
+    color: inherit;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: var(--border-width) solid #FFFFFF;
+    font-family: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-clip-path: var(--cropped-corner);
+    clip-path: var(--cropped-corner);
+    position: relative;
+    min-width: 15rem;
+    transition: all .18s ease-out;
+    letter-spacing: 2px;
+    
+    // animation-iteration-count: 1;
+    // animation-duration: 0.7s;
+    // animation-fill-mode: forwards;
+    
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: var(--corner-value);
+      height: calc(var(--corner-value) * 2);
+      bottom: calc(var(--corner-value) * -1);
+      right: calc(var(--corner-value) * -0.3);
+      background: #FFFFFF;
+      transform: rotate(45deg) translateX(0%)
+    }
+    
+    // &:after {
+    //   position: absolute;
+    //   content: '';
+    //   display: block;
+    //   width: 0;
+    //   height: 0;
+    //   border-right: 19px solid #FFFFFF;
+    //   border-top: 20px solid transparent;
+    //   border-bottom: 20px solid transparent;
+    //   right: 0;
+    // }
+    
+    &:hover {
+      color: #060606;
+      background-color: #FFFFFF;
+      letter-spacing: 1px;
+      
+      
+      // animation-name: blinking-btn;
+    }
+  }
+  
+  // @keyframes blinking-btn{
+  //   0%{
+  //     border-color: rgba(255,255,255,1);
+  //     background: linear-gradient(135deg, transparent, transparent 97%, #fff 3%);
+  //     color: #fff;
+  //   }
+  //   15%{
+  //     border-color: rgba(255,255,255,0.5);
+  //     background: linear-gradient(135deg, transparent, transparent 97%, rgba(255,255,255,0.5) 3%);
+  //     color: #fff;
+  //   }
+  //   30%{
+  //     border-color: rgba(255,255,255,1);
+  //     background: linear-gradient(135deg, transparent, transparent 97%, #fff 3%);
+  //     color: #fff;
+  //   }
+  //   45%{
+  //     border-color: rgba(255,255,255,0.5);
+  //     background: linear-gradient(135deg, transparent, transparent 97%, rgba(255,255,255,0.5) 3%);
+  //     color: #fff;
+  //   }
+  //   60%{
+  //     border-color: rgba(255,255,255,1);
+  //     background: linear-gradient(135deg, transparent, transparent 97%, #fff 3%);
+  //     color: #fff;
+  //   }
+  //   70%{
+  //     border-color: rgba(255,255,255,0.5);
+  //     background: linear-gradient(135deg, transparent, transparent 97%, rgba(255,255,255,0.5) 3%);
+  //     color: #fff;
+  //   }
+  //   80%{
+  //     border-color: rgba(255,255,255,1);
+  //     background: linear-gradient(135deg, transparent, transparent 97%, #fff 3%);
+  //     transition: 0.3s ease;
+  //   }
+  //   85%{
+  //     border-color: rgba(255,255,255,1);
+  //     background: linear-gradient(135deg, transparent, transparent 97%, #fff 3%);
+  //     transition: 0.3s ease;
+  //   }
+  //   100%{
+  //     border-color: rgba(255,255,255,1);
+  //     background: #fff;
+  //     color: #000;
+  //   }
+  // } */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 
 :root{
+    --black: #0B1628;
     --black: #0B1628;
     --white: #fefefe;
     --primary-1:#DF3DD6;
@@ -23,6 +155,13 @@ body{
     background-color: var(--black)!important;
 }
 
+@font-face {
+    font-family: 'gaint-plus';
+    src: url('../assets/Aquire-BW0ox.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
 *{
     padding: 0;
     margin: 0;
@@ -114,6 +253,9 @@ ul li{
 
 
 /* tags */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'gaint-plus';
+}
 
 h1{
     font-weight: 900;
