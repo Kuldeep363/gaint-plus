@@ -20,10 +20,29 @@
 
     {% if LANGUAGE_CODE == 'ar' %}
       <style>
+        @font-face {
+          font-family: 'gaint-plus';
+          src: url( "{% static 'website/assets/Cairo.ttf' %}");
+          font-weight: normal;
+          font-style: normal;
+          font-display: block;
+        }
+
         .footer-items ul li a::before{
           right: 0;
           left: unset;
         }
+      </style>
+    {% else %}
+      <style>
+        @font-face {
+          font-family: 'gaint-plus';
+          src: url("{% static 'website/assets/Aquire-BW0ox.otf' %}");
+          font-weight: normal;
+          font-style: normal;
+          font-display: block;
+        }
+
       </style>
     {% endif %}
     {% block css %}
@@ -320,11 +339,17 @@
 
 <script>
   let toTopBtn = document.getElementById('to-top');
+  let navBar = document.getElementById('navbars');
   window.onscroll = ()=>{
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
       toTopBtn.style.right = '35px'
     }else{
       toTopBtn.style.right = '-50px'
+    }
+    if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
+      navBar.style.backgroundColor = 'var(--black)'
+    }else{
+      navBar.style.backgroundColor = 'unset'
     }
 
   }

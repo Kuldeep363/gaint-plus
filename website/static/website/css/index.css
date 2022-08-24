@@ -1,12 +1,3 @@
-@font-face {
-    font-family: 'gaint-plus';
-    src: url('../assets/Aquire-BW0ox.otf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-
-
 :root{
     --black: #0B1628;
     --black: #0B1628;
@@ -89,6 +80,7 @@ ul li{
 #navbars {
     font-weight: 600;
     z-index: 11;
+    /* background-color: #1e27385b; */
     backdrop-filter: blur(10px);
 }
 #navbars .navbar-links a{
@@ -338,7 +330,7 @@ a{
     -webkit-transition: all 1s cubic-bezier(.16,1,.3,1);
     transition: all 1s cubic-bezier(.16,1,.3,1);
 }
-.stroke-btn::after, .service::after {
+.stroke-btn::after, .service::after, .products::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -361,7 +353,7 @@ a{
 .stroke-btn:hover{
     box-shadow: 0px 0px 25px rgba(223, 61, 214, 0.5);
 }
-.stroke-btn span::before, .service span::after {
+.stroke-btn span::before, .service span::after, .products span::after {
     content: '';
     display: block;
     position: absolute;
@@ -379,7 +371,7 @@ a{
     -webkit-clip-path: polygon(var(--corner) 0%, 100% 0, 100% calc(100% - var(--corner)), calc(100% - var(--corner)) 100%, 0 100%, 0 var(--corner));
     clip-path: polygon(var(--corner) 0%, 100% 0, 100% calc(100% - var(--corner)), calc(100% - var(--corner)) 100%, 0 100%, 0 var(--corner));
 }
-.service span::after,.service::after{
+.service span::after,.service::after, .products span::after,.products::after{
   -webkit-clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, var(--corner) 100%, 0 calc(100% - var(--corner)));
   clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, var(--corner) 100%, 0 calc(100% - var(--corner)));
 }
@@ -564,30 +556,7 @@ nav#mobile-navbar{
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
-}
-.products::after, .products::before{ 
-  content: '';
-  --corner: 20px;
-  background: var(--border);
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-  -webkit-clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, var(--corner) 100%, 0 calc(100% - var(--corner)));
-  clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, var(--corner) 100%, 0 calc(100% - var(--corner)));
-}
-.products::before{
-  background: var(--black);
-  top: 50%;
-  left: 50%;
-  height: 90%;
-  width: 90%;
-  transform: translate(-50%,50%);
+    --corner:20px
 }
 .service img, .products img{
     width: 100%;
@@ -763,42 +732,10 @@ nav#mobile-navbar{
 #our-products{
     position: relative;
 }
-#our-products::after{
-    content: '';
-    position: absolute;
-    right: -20px;
-    width: 100%;
-    height: 100%;
-    background-color: #1e27386b;
-    z-index: -2;
-}
 #our-work{
     position: relative;
 }
-#our-work::before, #our-products::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1e2738;
-    z-index: -2;
 
-}
-
-#our-work::after, #our-products::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 102%;
-    background: var(--border);
-    z-index: -3;
-    box-shadow: 0px 0px 29px rgb(223 61 214 / 65%);
-
-}
 
 
 #work-sec-img{
