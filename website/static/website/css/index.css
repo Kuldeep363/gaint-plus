@@ -171,7 +171,7 @@ a{
     --sizeX: 30px;
     --sizeY: 50px;
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
     width: var(--sizeX);
     height: var(--sizeY);
     margin-left: var(sizeX / 2);
@@ -276,7 +276,7 @@ a{
     content: '';
     --corner: 20px;
     /* background: var(--border); */
-    background: url('https://drive.google.com/uc?export=view&id=1ensW9Pz88nDND_xbqxWbnXQvmMEQCmPI') no-repeat center center;
+    background: var(--border) no-repeat center center;
     background-size: cover;
     top: 0;
     left: 0;
@@ -338,7 +338,7 @@ a{
     -webkit-transition: all 1s cubic-bezier(.16,1,.3,1);
     transition: all 1s cubic-bezier(.16,1,.3,1);
 }
-.stroke-btn::after {
+.stroke-btn::after, .service::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -361,7 +361,7 @@ a{
 .stroke-btn:hover{
     box-shadow: 0px 0px 25px rgba(223, 61, 214, 0.5);
 }
-.stroke-btn span::before {
+.stroke-btn span::before, .service span::after {
     content: '';
     display: block;
     position: absolute;
@@ -378,6 +378,10 @@ a{
 .stroke-btn,.stroke-btn::after,.stroke-btn span::before{
     -webkit-clip-path: polygon(var(--corner) 0%, 100% 0, 100% calc(100% - var(--corner)), calc(100% - var(--corner)) 100%, 0 100%, 0 var(--corner));
     clip-path: polygon(var(--corner) 0%, 100% 0, 100% calc(100% - var(--corner)), calc(100% - var(--corner)) 100%, 0 100%, 0 var(--corner));
+}
+.service span::after,.service::after{
+  -webkit-clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, var(--corner) 100%, 0 calc(100% - var(--corner)));
+  clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, var(--corner) 100%, 0 calc(100% - var(--corner)));
 }
 .stroke-btn:hover,.stroke-btn:hover::after,.stroke-btn:hover span::before{
     border-radius: 10px;
@@ -548,18 +552,48 @@ nav#mobile-navbar{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
     border-radius: 20px;
 }
+.service{
+  border-radius: unset;
+  background: unset;
+  --corner:20px
+}
 .products{
     /* width: 100%; */
-    background-color: #1e2738;
+    background-color: unset;
+    border-radius: unset;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
 }
-.service img, .products img{
-    width: 100%;
+.products::after, .products::before{ 
+  content: '';
+  --corner: 20px;
+  background: var(--border);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, var(--corner) 100%, 0 calc(100% - var(--corner)));
+  clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, var(--corner) 100%, 0 calc(100% - var(--corner)));
+}
+.products::before{
+  background: var(--black);
+  top: 50%;
+  left: 50%;
+  height: 90%;
+  width: 90%;
+  transform: translate(-50%,50%);
 }
 .service img, .products img{
-    border-radius: 20px;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, 0% 100%, 0 calc(100% - 100%));
+  clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, 0% 100%, 0 calc(100% - 100%));
+    
 }
 .products .body, .adv .body{
     margin: 1rem;
@@ -574,9 +608,8 @@ nav#mobile-navbar{
 .service .buy-btn a, .products .buy-btn a{
     display: block;
     padding: 20px 20px;
-    background: var(--border);
     font-weight: 600;
-    border-radius: 10px;
+    width: 100%;
 }
 #services div:nth-child(1) .service-container, #products div:nth-child(1) .products-container {
     justify-content: end;
@@ -1122,7 +1155,7 @@ footer{
         width: 80%;
     }
     .service .title h2{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .service .sub-text{
         font-size: 0.8rem;

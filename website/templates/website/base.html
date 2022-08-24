@@ -63,8 +63,8 @@
             <div id="navbar-links" class="d-flex align-items-center me-5">
             <ul class="d-flex mb-0">
               <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Home" %} </a></li>
-              <li class="navbar-links"><a href="{% url 'services' %}" class="{% if request.path == services %} active {% endif %}">{% trans "Our Services" %}</a></li>
-              <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-products">{% trans "Products" %} </a></li>
+              <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-services" >{% trans "Our Services" %}</a></li>
+              <!-- <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-products">{% trans "Products" %} </a></li> -->
               <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-work">{% trans "Our Work" %} </a></li>
               <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#contact">{% trans "Contact Us" %} </a></li>
               <li class="navbar-links"><a href="/terms">{% trans "Terms" %} </a></li>
@@ -135,8 +135,8 @@
                 <div class="d-flex justify-content-between mb-3  pt-5">
                 <ul class="mb-0 ps-0">
                   <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Home" %} </a></li>
-                  <li class="navbar-links"><a href="{% url 'services' %}" class="{% if request.path == services %} active {% endif %}">{% trans "Our Services" %}</a></li>
-                  <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-products">{% trans "Products" %} </a></li>
+                  <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-services" >{% trans "Our Services" %}</a></li>
+                  <!-- <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-products">{% trans "Products" %} </a></li> -->
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-work">{% trans "Our Work" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#contact">{% trans "Contact Us" %} </a></li>
                   <li class="navbar-links"><a href="/terms">{% trans "Terms" %} </a></li>
@@ -237,9 +237,9 @@
                 </div>
                 <div class="footer-items">
                   <ul class="p-0 mt-3">
-                    <li class="mb-2"><a href="/#our-products">{% trans "Products " %} </a></li>
-                    <li class="mb-2"><a href="/services">{% trans "Our Services" %}  </a></li>
-                    <li class="mb-2"><a href="/#contact">{% trans "Contact us" %}  </a></li>
+                    <!-- <li class="mb-2"><a href="/#our-products">{% trans "Products " %} </a></li> -->
+                    <li class="mb-2"><a href="{{ request.get_full_path |slice:':3' }}/#our-services">{% trans "Our Services" %}  </a></li>
+                    <li class="mb-2"><a href="{{ request.get_full_path |slice:':3' }}/#contact">{% trans "Contact us" %}  </a></li>
                     <li class="mb-2"><a href="/terms">{% trans "Terms & Conditions" %}  </a></li>
                     <li class="mb-2"><a href="/return-policy">{% trans "Replacement & Return policy" %}  </a></li>
                   </ul>
