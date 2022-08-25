@@ -1,1 +1,1 @@
-web: gunicorn gaint-plus.wsgi --log-file -
+web: gunicorn gaint_plus.wsgi --log-file -
