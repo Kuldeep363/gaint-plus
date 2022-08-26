@@ -2,20 +2,19 @@
 {% load static %}
 {% load i18n %}
 {% block title %}
-  <title>Gaint Plus</title>
+  <title>Products - Gaint Plus</title>
 {% endblock %}
 
 {% block container %}
 
 
   <!-- our products -->
+  <!-- <img src="https://drive.google.com/uc?export=view&id=1M8ljHIf0OwdvQJpEPzcyP1y5way-QBR2" alt="gaint-plus products" style="height:400px;position:absolute; top:0;left: 0;width: 100%;z-index: -3;"> -->
 
-  <div id="our-products"  style="position:relative;">
-      
-    <img src="https://drive.google.com/uc?export=view&id=1DqF1KwBGj9AiqlrT0KyZDWy2RWy3b1Id" alt="gaint-plus products" style="height:525px;position:absolute; top:-125px;left: 0;height:525px;width: 100%;z-index: -3;">
-    
-    <div class="d-flex justify-content-center align-items-center" style="height: 400px;" >
-      <div class="text-center">
+  <div id="our-products"  >
+    <div class="d-flex justify-content-center align-items-center" style="height: 350px;" >
+      <div class="text-center" style="position: relative;">
+        <div class="dot dot-h-r dot-v-t dot-blur lg-dot"></div>
         <h1 data-aos="fade-up" data-aos-duration="1000" class="glitch" data-text="{% trans 'Our Products' %}">{% trans "Our Products" %}</h1>
         <!-- <p class="sub-text mt-4 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
           {% trans "Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. Supraryvona frågestrejka, maliga och gigast. " %}
@@ -29,7 +28,7 @@
       <img src="https://drive.google.com/uc?export=view&id=1_S80O9x0swCTGSbiVOAGU0eim8riCm8l" alt="" style="position:absolute; top:-50px;right: -50px;width: 125px;">
      <div class="container85">
        <div>    
-           <div class="row m-0 mt-5 mb-5" id="products">
+           <div class="row m-0  mb-5" id="products">
              <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-5" style="position: relative;">
               <div class="dot lg-dot dot-h-l dot-v-t" ></div>
                <div class="products-container" data-aos="fade-up" data-aos-duration="1000">
@@ -38,13 +37,18 @@
                      <div class="prod-img">
                        <img src="https://drive.google.com/uc?export=view&id=164qDmppoELTOJ7nWDT5SviBE9FC7bb-D" alt="gaint-plus products">
                      </div>
-                     <div class="body">
+                     <div class="mt-3 mb-3">
                        <div class="title">
-                         <h2>
-                           {% trans "Professional Setup Design" %}
+                         <h2 class="text-start">
+                           {% trans "Room Design" %}
                          </h2>
                        </div>
+                       <div class="text-start">
+                        <span>399 SR</span> 
+                        <small>Excl. tax</small>
+                       </div>
                      </div>
+
        
                      <div class="buy-btn">
                        <a href="{% static 'website/assets/gaint-plus.pdf' %}" target="_blank" class="primary-btn-gp">
@@ -81,11 +85,15 @@
                      <div class="prod-img">
                        <img src="https://drive.google.com/uc?export=view&id=1KEy97Ge4nqLYg-vjZCsSGjbCpsrClTou" alt="gaint-plus services">
                      </div>
-                     <div class="body">
+                     <div class="mt-3 mb-3">
                        <div class="title">
-                         <h2>
+                         <h2 class="text-start">
                            {% trans "Professional Setup Design" %}
                          </h2>
+                       </div>
+                       <div class="text-start">
+                        <span>1170 SR</span> 
+                        <small>Excl. tax</small>
                        </div>
                      </div>
        
@@ -124,13 +132,17 @@
                      <div class="prod-img">
                        <img src="https://drive.google.com/uc?export=view&id=1avs4d3bC1tL-PFqbpQNUxN_UlE9PEN2O" alt="gaint-plus services">
                      </div>
-                     <div class="body">
-                       <div class="title">
-                         <h2>
-                           {% trans "Professional Setup Design" %}
-                         </h2>
-                       </div>
-                     </div>
+                     <div class="mt-3 mb-3">
+                      <div class="title">
+                        <h2 class="text-start">
+                          {% trans "Professional Setup Design" %}
+                        </h2>
+                      </div>
+                      <div class="text-start">
+                       <span>399 SR</span> 
+                       <small>Excl. tax</small>
+                      </div>
+                    </div>
        
                      <div class="buy-btn">
                        <a href="{% static 'website/assets/gaint-plus.pdf' %}" target="_blank" class="primary-btn-gp">
