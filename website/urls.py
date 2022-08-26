@@ -3,6 +3,6 @@ from . import views as vw
 
 urlpatterns = [
     path('', vw.home, name='home'),
-    # path('services', vw.services, name='services'),
+    path('our-products', vw.services, name='products'),
     # path('design', vw.mockup, name='design'),
 ]

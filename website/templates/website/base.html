@@ -1,7 +1,7 @@
 {% load static %}
 {% load i18n %}
 {% url 'home' as home %}
-{% url 'services' as services %}
+{% url 'products' as products %}
 {% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
 {% if LANGUAGE_CODE == 'ar' %}
@@ -83,7 +83,7 @@
             <ul class="d-flex mb-0">
               <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Home" %} </a></li>
               <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-services" >{% trans "Our Services" %}</a></li>
-              <!-- <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-products">{% trans "Products" %} </a></li> -->
+              <li class="navbar-links"><a href="{% url 'products' %}" class="{% if request.path == products %} active {% endif %}">{% trans "Products" %} </a></li>
               <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-work">{% trans "Our Work" %} </a></li>
               <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#contact">{% trans "Contact Us" %} </a></li>
               <li class="navbar-links"><a href="/terms">{% trans "Terms" %} </a></li>
@@ -155,7 +155,7 @@
                 <ul class="mb-0 ps-0">
                   <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Home" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-services" >{% trans "Our Services" %}</a></li>
-                  <!-- <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-products">{% trans "Products" %} </a></li> -->
+                  <li class="navbar-links"><a href="{% url 'products' %}">{% trans "Products" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-work">{% trans "Our Work" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#contact">{% trans "Contact Us" %} </a></li>
                   <li class="navbar-links"><a href="/terms">{% trans "Terms" %} </a></li>
@@ -224,7 +224,9 @@
 
   <footer class="mt-5" style="position: relative;">
     <div class="footer-container d-flex justify-content-center">
-      <div class="container85" style="border-top: 1px solid #1E2738;">
+      <div class="container85" style="border-top: 1px solid #1E2738; position: relative;">
+        <div class="dot lg-dot dot-h-l dot-v-c" ></div>
+        <div class="dot lg-dot dot-h-r dot-v-t dot-blur" ></div>
         <div class="footer-wrapper">
           <div class="row m-0 mb-3">
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
@@ -256,7 +258,7 @@
                 </div>
                 <div class="footer-items">
                   <ul class="p-0 mt-3">
-                    <!-- <li class="mb-2"><a href="/#our-products">{% trans "Products " %} </a></li> -->
+                    <li class="mb-2"><a href="{% url 'products' %}">{% trans "Products " %} </a></li>
                     <li class="mb-2"><a href="{{ request.get_full_path |slice:':3' }}/#our-services">{% trans "Our Services" %}  </a></li>
                     <li class="mb-2"><a href="{{ request.get_full_path |slice:':3' }}/#contact">{% trans "Contact us" %}  </a></li>
                     <li class="mb-2"><a href="/terms">{% trans "Terms & Conditions" %}  </a></li>

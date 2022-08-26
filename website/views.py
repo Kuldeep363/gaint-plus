@@ -6,7 +6,7 @@ def home(request):
     return render(request,'website/index.html')
 
 def services(request):
-    return render(request,'website/services.html')
+    return render(request,'website/products.html')
 
 def mockup(request):
     return render(request,'website/gaint-plus.html')
