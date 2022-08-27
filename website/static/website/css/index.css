@@ -26,7 +26,8 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     color: var(--white);
 }
@@ -115,9 +116,10 @@ ul li{
 
 
 /* tags */
-h1,h2,h3,h4,h5,h6{
-    font-family: 'gaint-plus';
-}
+/* h1,h2,h3,h4,h5,h6{ */
+    /* font-family: 'gaint-plus'; */
+    /* font-family: 'Roboto', sans-serif; */
+/* } */
 
 h1{
     font-weight: 900;
