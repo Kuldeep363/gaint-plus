@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-26 13:23+0530\n"
+"POT-Creation-Date: 2022-08-27 13:39+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,7 +141,7 @@ msgstr ""
 "نقدم الاستشارات الفنية"
 
 #: .\website\templates\website\index.html:542
-#: .\website\templates\website\products.html:19
+#: .\website\templates\website\products.html:18
 msgid "Our Products"
 msgstr "منتجاتنا"
 
@@ -149,9 +149,8 @@ msgstr "منتجاتنا"
 #: .\website\templates\website\index.html:597
 #: .\website\templates\website\index.html:639
 #: .\website\templates\website\index.html:706
-#: .\website\templates\website\products.html:44
-#: .\website\templates\website\products.html:87
-#: .\website\templates\website\products.html:130
+#: .\website\templates\website\products.html:91
+#: .\website\templates\website\products.html:138
 msgid "Professional Setup Design"
 msgstr "تصميم الإعداد الاحترافي"
 
@@ -161,14 +160,14 @@ msgstr "تصميم الإعداد الاحترافي"
 #: .\website\templates\website\index.html:740
 #: .\website\templates\website\index.html:794
 #: .\website\templates\website\index.html:848
-#: .\website\templates\website\products.html:66
-#: .\website\templates\website\products.html:109
-#: .\website\templates\website\products.html:152
+#: .\website\templates\website\products.html:70
+#: .\website\templates\website\products.html:117
+#: .\website\templates\website\products.html:164
 msgid "Buy now"
 msgstr "اشتري الآن"
 
 #: .\website\templates\website\index.html:675
-#: .\website\templates\website\products.html:166
+#: .\website\templates\website\products.html:178
 msgid "Get Quote"
 msgstr "الحصول على الاقتباس"
 
@@ -192,17 +191,17 @@ msgid "Implementation of the Set"
 msgstr "تنفيذ المجموعة"
 
 #: .\website\templates\website\index.html:882
-#: .\website\templates\website\products.html:178
+#: .\website\templates\website\products.html:190
 msgid "Loved our products!"
 msgstr "أحببت منتجاتنا!"
 
 #: .\website\templates\website\index.html:883
-#: .\website\templates\website\products.html:179
+#: .\website\templates\website\products.html:191
 msgid "Want to know how you can get these beautiful designs?"
 msgstr "هل تريد أن تعرف كيف يمكنك الحصول على هذه التصاميم الجميلة؟"
 
 #: .\website\templates\website\index.html:886
-#: .\website\templates\website\products.html:182
+#: .\website\templates\website\products.html:194
 msgid "View guide"
 msgstr "عرض الدليل"
 
@@ -211,7 +210,7 @@ msgid "Advantages of Buying a Design"
 msgstr "مزايا شراء التصميم"
 
 #: .\website\templates\website\index.html:909
-#: .\website\templates\website\products.html:21
+#: .\website\templates\website\products.html:20
 msgid ""
 "Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten "
 "vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. "
@@ -306,6 +305,10 @@ msgstr "رسالة"
 #: .\website\templates\website\index.html:1227
 msgid "Submit"
 msgstr "يُقدِّم"
+
+#: .\website\templates\website\products.html:43
+msgid "Room Design"
+msgstr "تصميم الغرفة"
 
 #~ msgid "Get in touch"
 #~ msgstr "ابقى على تواصل"
