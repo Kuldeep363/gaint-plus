@@ -20,30 +20,31 @@
 
     {% if LANGUAGE_CODE == 'ar' %}
       <style>
-        /* @font-face {
+        @font-face {
           font-family: 'gaint-plus';
           src: url( "{% static 'website/assets/Cairo.ttf' %}");
           font-weight: normal;
           font-style: normal;
           font-display: block;
-        } */
+        }
 
         .footer-items ul li a::before{
           right: 0;
           left: unset;
         }
       </style>
-    {% endif %}
-    <!-- <style>
-      @font-face {
+    {% else %}
+      <style>
+        @font-face {
           font-family: 'gaint-plus';
-          src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+          src: url("{% static 'website/assets/Aquire-BW0ox.otf' %}");
           font-weight: normal;
           font-style: normal;
           font-display: block;
         }
 
-    </style> -->
+      </style>
+    {% endif %}
     {% block css %}
     
     {% endblock  %}
@@ -52,7 +53,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
     {% block title %}
 
@@ -91,7 +91,7 @@
             </div>
             <div class="navbar-btns d-flex align-items-center">
             <div class="me-3" >
-                <button class="primary-btn-gp change-lang" style="position: relative;">
+                <button class="primary-btn-gp change-lang" style="position: relative;font-size: 0.8rem;">
                     <span>Change language</span>
                     <span id="arrow-down">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -163,7 +163,7 @@
                 </div>
             <div class="navbar-btns" >
                 <div  >
-                    <button class="primary-btn-gp change-lang" style="position: relative;">
+                    <button class="primary-btn-gp change-lang" style="position: relative;font-size: 0.8rem;">
                     <span>Change language</span>
                     <span id="arrow-down">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -252,9 +252,9 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
               <div class="footer-sec-2 mt-3">
                 <div class="heading mb-4">
-                  <h4>
+                  <h6>
                     {% trans "Useful links" %} 
-                  </h4>
+                  </h6>
                 </div>
                 <div class="footer-items">
                   <ul class="p-0 mt-3">
@@ -270,9 +270,9 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
               <div class="footer-sec-3 mt-3">
                 <div class="heading mb-4">
-                  <h4>
+                  <h6>
                     {% trans "Connect with us" %} 
-                  </h4>
+                  </h6>
                 </div>
                 <div class="social-icons">
                   <div class="d-flex">
@@ -301,9 +301,9 @@
               </div>
             </div>
           </div>
-          <div class="copyright">
+          <div class="copyright mb-2">
             <div class="text-center">
-              <p> {% trans "2022 All Rights Reserved Giant PlusTM ©" %} </p>
+              <small> {% trans "2022 All Rights Reserved Giant PlusTM ©" %} </small>
             </div>
           </div>
         </div>

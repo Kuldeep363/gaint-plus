@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-27 13:39+0530\n"
+"POT-Creation-Date: 2022-08-28 12:00+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,14 +100,20 @@ msgid "2022 All Rights Reserved Giant PlusTM ©"
 msgstr "2022 جميع الحقوق محفوظة Giant PlusTM ©"
 
 #: .\website\templates\website\index.html:59
-#: .\website\templates\website\index.html:60
+#, fuzzy
+#| msgid "We Built a Next Generation"
 msgid "Next Generation"
-msgstr "الجيل القادم"
+msgstr "بنينا جيلًا جديدًا"
 
 #: .\website\templates\website\index.html:59
-#: .\website\templates\website\index.html:60
+#, fuzzy
+#| msgid "Smart Gaming Rooms"
 msgid "Smart Rooms"
-msgstr "غرف ذكية"
+msgstr "غرف ألعاب ذكية"
+
+#: .\website\templates\website\index.html:60
+msgid "Next Generation Smart Rooms"
+msgstr "الجيل القادم للغرف الذكية"
 
 #: .\website\templates\website\index.html:66
 msgid ""
