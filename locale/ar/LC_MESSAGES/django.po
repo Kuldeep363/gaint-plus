@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-28 12:00+0530\n"
+"POT-Creation-Date: 2022-08-28 13:43+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgstr "منتجات"
 #: .\website\templates\website\base.html:87
 #: .\website\templates\website\base.html:159
 msgid "Our Work"
-msgstr "عملنا"
+msgstr "اعمالنا"
 
 #: .\website\templates\website\base.html:88
 #: .\website\templates\website\base.html:160
@@ -60,12 +60,13 @@ msgid "Terms"
 msgstr "شروط"
 
 #: .\website\templates\website\base.html:241
+#: .\website\templates\website\index.html:66
 msgid ""
-"Everything related to qimqq and more is distinguished by the design of the "
-"rooms, as well as special and exclusive keyboards and mice upon request."
+"Specialists in designing smart rooms and guest rooms and implementing them "
+"on demand, as well as a coffee corner, keyboards, special mice, and more."
 msgstr ""
-"كل ما يتعلق ب qimqq وأكثر يتميز بتصميم الغرف ، بالإضافة إلى لوحات المفاتيح "
-"والفأرات الخاصة والحصرية عند الطلب."
+"مختصين بتصميم الغرف الذكية وغرف القيمنق وتنفيذها حسب الطلب، وأيضًا ركن القهوة "
+"و الكيبوردات والماوسات الخاصة وغير ذلك."
 
 #: .\website\templates\website\base.html:248
 msgid "Commercial Registration No: 204365"
@@ -100,28 +101,9 @@ msgid "2022 All Rights Reserved Giant PlusTM ©"
 msgstr "2022 جميع الحقوق محفوظة Giant PlusTM ©"
 
 #: .\website\templates\website\index.html:59
-#, fuzzy
-#| msgid "We Built a Next Generation"
-msgid "Next Generation"
-msgstr "بنينا جيلًا جديدًا"
-
-#: .\website\templates\website\index.html:59
-#, fuzzy
-#| msgid "Smart Gaming Rooms"
-msgid "Smart Rooms"
-msgstr "غرف ألعاب ذكية"
-
 #: .\website\templates\website\index.html:60
 msgid "Next Generation Smart Rooms"
 msgstr "الجيل القادم للغرف الذكية"
-
-#: .\website\templates\website\index.html:66
-msgid ""
-"Specialists in designing smart rooms and guest rooms and implementing them "
-"on demand, as well as a coffee corner, keyboards, special mice, and more."
-msgstr ""
-"متخصصون في تصميم الغرف الذكية وغرف النزلاء وتنفيذها حسب الطلب وكذلك ركن قهوة "
-"ولوحات مفاتيح وماوسات خاصة والمزيد."
 
 #: .\website\templates\website\index.html:74
 msgid "Contact Now"
@@ -155,8 +137,6 @@ msgstr "منتجاتنا"
 #: .\website\templates\website\index.html:597
 #: .\website\templates\website\index.html:639
 #: .\website\templates\website\index.html:706
-#: .\website\templates\website\products.html:91
-#: .\website\templates\website\products.html:138
 msgid "Professional Setup Design"
 msgstr "تصميم الإعداد الاحترافي"
 
@@ -194,7 +174,7 @@ msgstr "تصميم ركن القهوة"
 
 #: .\website\templates\website\index.html:814
 msgid "Implementation of the Set"
-msgstr "تنفيذ المجموعة"
+msgstr "تنفيذ السيت اب"
 
 #: .\website\templates\website\index.html:882
 #: .\website\templates\website\products.html:190
@@ -315,6 +295,25 @@ msgstr "يُقدِّم"
 #: .\website\templates\website\products.html:43
 msgid "Room Design"
 msgstr "تصميم الغرفة"
+
+#: .\website\templates\website\products.html:91
+msgid "Gaming Table"
+msgstr "طاولة قيمنق"
+
+#: .\website\templates\website\products.html:138
+#, fuzzy
+msgid "Gaming Mouse"
+msgstr "ماوس قيمنق"
+
+#, fuzzy
+#~| msgid "We Built a Next Generation"
+#~ msgid "Next Generation"
+#~ msgstr "بنينا جيلًا جديدًا"
+
+#, fuzzy
+#~| msgid "Smart Gaming Rooms"
+#~ msgid "Smart Rooms"
+#~ msgstr "غرف ألعاب ذكية"
 
 #~ msgid "Get in touch"
 #~ msgstr "ابقى على تواصل"
