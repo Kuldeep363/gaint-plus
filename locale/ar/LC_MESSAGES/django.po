@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-28 13:43+0530\n"
+"POT-Creation-Date: 2022-08-29 12:15+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,39 +27,39 @@ msgstr ""
 msgid "English"
 msgstr ""
 
-#: .\website\templates\website\base.html:84
-#: .\website\templates\website\base.html:156
+#: .\website\templates\website\base.html:85
+#: .\website\templates\website\base.html:157
 msgid "Home"
 msgstr "مسكن"
 
-#: .\website\templates\website\base.html:85
-#: .\website\templates\website\base.html:157
-#: .\website\templates\website\base.html:262
+#: .\website\templates\website\base.html:86
+#: .\website\templates\website\base.html:158
+#: .\website\templates\website\base.html:263
 #: .\website\templates\website\index.html:691
 msgid "Our Services"
 msgstr "خدماتنا"
 
-#: .\website\templates\website\base.html:86
-#: .\website\templates\website\base.html:158
+#: .\website\templates\website\base.html:87
+#: .\website\templates\website\base.html:159
 msgid "Products"
 msgstr "منتجات"
 
-#: .\website\templates\website\base.html:87
-#: .\website\templates\website\base.html:159
+#: .\website\templates\website\base.html:88
+#: .\website\templates\website\base.html:160
 msgid "Our Work"
 msgstr "اعمالنا"
 
-#: .\website\templates\website\base.html:88
-#: .\website\templates\website\base.html:160
+#: .\website\templates\website\base.html:89
+#: .\website\templates\website\base.html:161
 msgid "Contact Us"
 msgstr "اتصل بنا"
 
-#: .\website\templates\website\base.html:89
-#: .\website\templates\website\base.html:161
+#: .\website\templates\website\base.html:90
+#: .\website\templates\website\base.html:162
 msgid "Terms"
 msgstr "شروط"
 
-#: .\website\templates\website\base.html:241
+#: .\website\templates\website\base.html:242
 #: .\website\templates\website\index.html:66
 msgid ""
 "Specialists in designing smart rooms and guest rooms and implementing them "
@@ -68,35 +68,35 @@ msgstr ""
 "مختصين بتصميم الغرف الذكية وغرف القيمنق وتنفيذها حسب الطلب، وأيضًا ركن القهوة "
 "و الكيبوردات والماوسات الخاصة وغير ذلك."
 
-#: .\website\templates\website\base.html:248
+#: .\website\templates\website\base.html:249
 msgid "Commercial Registration No: 204365"
 msgstr "رقم السجل التجاري: 204365"
 
-#: .\website\templates\website\base.html:256
+#: .\website\templates\website\base.html:257
 msgid "Useful links"
 msgstr "روابط مفيدة"
 
-#: .\website\templates\website\base.html:261
+#: .\website\templates\website\base.html:262
 msgid "Products "
 msgstr "منتجات"
 
-#: .\website\templates\website\base.html:263
+#: .\website\templates\website\base.html:264
 msgid "Contact us"
 msgstr "اتصل بنا"
 
-#: .\website\templates\website\base.html:264
+#: .\website\templates\website\base.html:265
 msgid "Terms & Conditions"
 msgstr "البنود و الظروف"
 
-#: .\website\templates\website\base.html:265
+#: .\website\templates\website\base.html:266
 msgid "Replacement & Return policy"
 msgstr "سياسة الاستبدال والإرجاع"
 
-#: .\website\templates\website\base.html:274
+#: .\website\templates\website\base.html:275
 msgid "Connect with us"
 msgstr "اتصل بنا"
 
-#: .\website\templates\website\base.html:306
+#: .\website\templates\website\base.html:307
 msgid "2022 All Rights Reserved Giant PlusTM ©"
 msgstr "2022 جميع الحقوق محفوظة Giant PlusTM ©"
 
@@ -291,6 +291,11 @@ msgstr "رسالة"
 #: .\website\templates\website\index.html:1227
 msgid "Submit"
 msgstr "يُقدِّم"
+
+#: .\website\templates\website\notFound.html:345
+#: .\website\templates\website\notFound.html:346
+msgid "Page not found"
+msgstr "الصفحة غير موجودة"
 
 #: .\website\templates\website\products.html:43
 msgid "Room Design"

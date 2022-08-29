@@ -8,5 +8,13 @@ def home(request):
 def services(request):
     return render(request,'website/products.html')
 
-def mockup(request):
-    return render(request,'website/gaint-plus.html')
+# def terms(request):
+#     return render(request,'website/terms.html')
+
+
+# def returnPolicy(request):
+#     return render(request,'website/returnPolicy.html')
+
+
+def error_404(request,exception):
+    return render(request,'website/notFound.html')

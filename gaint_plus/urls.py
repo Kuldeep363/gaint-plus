@@ -19,3 +19,6 @@ urlpatterns += i18n_patterns(
 #     # prefix_default_language=False,
 #  ] +  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 # 'django-insecure-+sh4+)77v(bv(atm-)=_^4bhu@u%tw!j04#2xs847sz)*l&v+6'
+
+
+handler404 = 'website.views.error_404'

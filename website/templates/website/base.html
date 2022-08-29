@@ -20,15 +20,7 @@
 
     {% if LANGUAGE_CODE == 'ar' %}
       <style>
-        @font-face {
-          font-family: 'gaint-plus';
-          src: url( "{% static 'website/assets/Cairo.ttf' %}");
-          font-weight: normal;
-          font-style: normal;
-          font-display: block;
-        }
-
-        .footer-items ul li a::before{
+      .footer-items ul li a::before{
           right: 0;
           left: unset;
         }
@@ -36,23 +28,32 @@
     {% else %}
       <style>
         @font-face {
-          font-family: 'gaint-plus';
-          src: url("{% static 'website/assets/Aquire-BW0ox.otf' %}");
-          font-weight: normal;
-          font-style: normal;
-          font-display: block;
+        font-family: 'gaint-plus';
+        src: url("{% static 'website/assets/Aquire-BW0ox.otf' %}");
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+        }
+        h1,h2,h3,h4,h5,h6{
+            font-family: 'gaint-plus';
         }
 
       </style>
     {% endif %}
+    <style>
+      @font-face {
+      font-family: 'gp';
+      src: url( "{% static 'website/assets/Cairo.ttf' %}");
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+      }
+    </style>
     {% block css %}
     
     {% endblock  %}
     <link rel="stylesheet" href="{% static 'website/css/index.css' %}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
     
     {% block title %}
 
@@ -86,7 +87,7 @@
               <li class="navbar-links"><a href="{% url 'products' %}" class="{% if request.path == products %} active {% endif %}">{% trans "Products" %} </a></li>
               <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-work">{% trans "Our Work" %} </a></li>
               <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#contact">{% trans "Contact Us" %} </a></li>
-              <li class="navbar-links"><a href="/terms">{% trans "Terms" %} </a></li>
+              <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/terms" class="{% if request.path == terms %} active {% endif %}">{% trans "Terms" %} </a></li>
             </ul>
             </div>
             <div class="navbar-btns d-flex align-items-center">
@@ -154,11 +155,11 @@
                 <div class="d-flex justify-content-between mb-3  pt-5">
                 <ul class="mb-0 ps-0">
                   <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Home" %} </a></li>
-                  <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-services" >{% trans "Our Services" %}</a></li>
+                  <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-servicess" >{% trans "Our Services" %}</a></li>
                   <li class="navbar-links"><a href="{% url 'products' %}">{% trans "Products" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-work">{% trans "Our Work" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#contact">{% trans "Contact Us" %} </a></li>
-                  <li class="navbar-links"><a href="/terms">{% trans "Terms" %} </a></li>
+                  <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/terms">{% trans "Terms" %} </a></li>
                 </ul>
                 </div>
             <div class="navbar-btns" >
@@ -261,8 +262,8 @@
                     <li class="mb-2"><a href="{% url 'products' %}">{% trans "Products " %} </a></li>
                     <li class="mb-2"><a href="{{ request.get_full_path |slice:':3' }}/#our-services">{% trans "Our Services" %}  </a></li>
                     <li class="mb-2"><a href="{{ request.get_full_path |slice:':3' }}/#contact">{% trans "Contact us" %}  </a></li>
-                    <li class="mb-2"><a href="/terms">{% trans "Terms & Conditions" %}  </a></li>
-                    <li class="mb-2"><a href="/return-policy">{% trans "Replacement & Return policy" %}  </a></li>
+                    <li class="mb-2"><a href="{{ request.get_full_path |slice:':3' }}/terms">{% trans "Terms & Conditions" %}  </a></li>
+                    <li class="mb-2"><a href="{{ request.get_full_path |slice:':3' }}/return-policy">{% trans "Replacement & Return policy" %}  </a></li>
                   </ul>
                 </div>
               </div>

@@ -22,11 +22,11 @@ body{
 }
 
 
-*{
+*{ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'gp';
     font-weight: normal;
     color: var(--white);
 }
@@ -115,10 +115,7 @@ ul li{
 
 
 /* tags */
-h1,h2,h3,h4,h5,h6{
-    font-family: 'gaint-plus';
-    /* font-family: 'Roboto', sans-serif; */
-}
+
 
 h1{
     font-weight: 900;
@@ -440,8 +437,14 @@ model-viewer {
 #room-svg svg{
     width: 100%;
 }
-#room-svg svg .float-animation{
+.bkg-clr{
+  background-color: var(--black);
+}
+.float-animation{
     animation: float 4s ease-in-out alternate infinite;
+    -webkit-animation: float 4s ease-in-out alternate infinite;
+    -moz-animation: float 4s ease-in-out alternate infinite;
+    -o-animation: float 4s ease-in-out alternate infinite;
 }
 
 
