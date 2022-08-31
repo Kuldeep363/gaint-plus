@@ -20,7 +20,7 @@ body{
     overflow-x: hidden;
     background-color: var(--black)!important;
 }
-
+ 
 
 *{ 
     padding: 0;
@@ -372,7 +372,7 @@ a{
     -webkit-clip-path: polygon(var(--corner) 0%, 100% 0, 100% calc(100% - var(--corner)), calc(100% - var(--corner)) 100%, 0 100%, 0 var(--corner));
     clip-path: polygon(var(--corner) 0%, 100% 0, 100% calc(100% - var(--corner)), calc(100% - var(--corner)) 100%, 0 100%, 0 var(--corner));
 }
-.service span::after,.service::after, .products span::after,.products::after, .stroke-cyberpunk span::after{
+.service span::after,.service::after, .stroke-cyberpunk span::after{
   -webkit-clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, var(--corner) 100%, 0 calc(100% - var(--corner)));
   clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, var(--corner) 100%, 0 calc(100% - var(--corner)));
 }
@@ -381,7 +381,7 @@ a{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
 }
-.service:hover span::after,.service:hover::after, .products:hover span::after,.products:hover::after{
+.service:hover span::after,.service:hover::after{
   border-radius: 10px;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 0%, 100% 100%, 0% 100%, 0 100%);
@@ -568,13 +568,25 @@ nav#mobile-navbar{
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
-    --corner:20px
+    border-radius: 20px;
 }
-.service img, .products img{
+.products span::after{
+  border-radius: 20px;
+}
+.products .primary-btn-gp::after {
+  clip-path: unset;
+  -webkit-clip-path:unset;
+  border-radius: 15px;
+}
+.service img{
     width: 100%;
     -webkit-clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, 0% 100%, 0 calc(100% - 100%));
   clip-path: polygon(0 0, calc(100% - var(--corner)) 0%, 100% var(--corner), 100% 100%, 0% 100%, 0 calc(100% - 100%));
     
+}
+.products img{
+  width: 100%;
+  border-radius: 20px;
 }
 .products .body, .adv .body{
     margin: 1rem;
