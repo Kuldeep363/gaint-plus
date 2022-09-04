@@ -82,7 +82,7 @@
         <div class="d-flex justify-content-between">
             <div id="navbar-links" class="d-flex align-items-center me-5">
             <ul class="d-flex mb-0">
-              <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Home" %} </a></li>
+              <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Main" %} </a></li>
               <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-services" >{% trans "Our Services" %}</a></li>
               <li class="navbar-links"><a href="{% url 'products' %}" class="{% if request.path == products %} active {% endif %}">{% trans "Products" %} </a></li>
               <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-work">{% trans "Our Work" %} </a></li>
@@ -154,7 +154,7 @@
             <div id="mob-navbar-links" class="d-flex align-items-center flex-column me-5">
                 <div class="d-flex justify-content-between mb-3  pt-5">
                 <ul class="mb-0 ps-0">
-                  <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Home" %} </a></li>
+                  <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Main" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-servicess" >{% trans "Our Services" %}</a></li>
                   <li class="navbar-links"><a href="{% url 'products' %}">{% trans "Products" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-work">{% trans "Our Work" %} </a></li>
@@ -350,9 +350,9 @@
       toTopBtn.style.right = '-50px'
     }
     if(document.body.scrollTop > 500 || document.documentElement.scrollTop > 500){
-      navBar.style.backgroundColor = 'var(--black)'
+      navBar.classList.add('scrolled')
     }else{
-      navBar.style.backgroundColor = 'unset'
+      navBar.classList.remove('scrolled')
     }
 
   }

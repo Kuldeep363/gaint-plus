@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+sh4+)77v(bv(atm-)=_^4bhu@u%tw!j04#2xs847sz)*l&v+6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+# DEBUG = True 
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','figmavibes.pythonanywhere.com','gaint-plus.com','gaint-plus.herokuapp.com']
