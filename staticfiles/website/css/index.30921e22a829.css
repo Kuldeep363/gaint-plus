@@ -853,7 +853,7 @@ nav#mobile-navbar{
 #contact-form .side-content{
   height: 100%;
   background-color: var(--primary-2);
-  background-image: url('../assets/contact.png');
+  background-image: url("../assets/contact.fbf8ef05a363.png");
   background-size: contain;
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -893,7 +893,7 @@ footer{
 
 .dot{
   position: absolute;
-  background: url('../assets/dot.png') center center no-repeat;
+  background: url("../assets/dot.6c4f79b9f40b.png") center center no-repeat;
   background-size: cover;
   z-index: -5;
   animation: float 3s alternate infinite ease-in-out;

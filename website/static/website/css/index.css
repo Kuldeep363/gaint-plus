@@ -564,7 +564,7 @@ nav#mobile-navbar{
 .products,.service{
     /* width: 100%; */
     background-color: unset;
-    background: linear-gradient(180.02deg, #D59182 -38.65%, rgba(255, 255, 255, 0) 81.62%);
+    background: linear-gradient(180deg, #DF3DD6 -8.18%, #3AD3D9 35.45%, rgba(58, 211, 217, 0) 78.59%);
     border-radius: unset;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
