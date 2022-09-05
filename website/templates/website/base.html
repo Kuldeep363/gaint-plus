@@ -156,7 +156,7 @@
                 <ul class="mb-0 ps-0">
                   <li class="navbar-links"><a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">{% trans "Main" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-servicess" >{% trans "Our Services" %}</a></li>
-                  <li class="navbar-links"><a href="{% url 'products' %}">{% trans "Products" %} </a></li>
+                  <li class="navbar-links"><a href="{% url 'products' %}" class="{% if request.path == products %} active {% endif %}">{% trans "Products" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#our-work">{% trans "Our Work" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/#contact">{% trans "Contact Us" %} </a></li>
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/terms">{% trans "Terms" %} </a></li>
