@@ -162,49 +162,49 @@
                   <li class="navbar-links"><a href="{{ request.get_full_path |slice:':3' }}/terms">{% trans "Terms" %} </a></li>
                 </ul>
                 </div>
-            <div class="navbar-btns" >
-                <div  >
-                    <button class="primary-btn-gp change-lang" style="position: relative;font-size: 0.8rem;">
-                    <span>Change language</span>
-                    <span id="arrow-down">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                    
-                    </span>
-                    <div id="lang-dropdown">
-                      <ul class="m-0 p-0 pt-2 pb-2 text-start">
-                        <a href="/en{{ request.get_full_path |slice:'3:' }}" >
-                            <li>
-                                <span><img src="https://drive.google.com/uc?export=view&id=12MTCVdP9uAXt1GJ3j74LUgj4Oi5mdlcE" alt="gaint-plus english"></span>
-                                <span class="ms-2">English</span>
-                            </li>
-                        </a>
-                        <a href="/ar{{ request.get_full_path |slice:'3:' }}" >
-                            <li>
-                                <span><img src="https://drive.google.com/uc?export=view&id=1nOL9FhbsV9H21txfpbojBViFoQQ5UewE" alt="gaint-plus arabic"></span>
-                                <span class="ms-2">Arabic</span>
-                            </li>
-                        </a>
-                    </ul>
+                <div class="navbar-btns" >
+                    <div  >
+                        <button class="primary-btn-gp change-lang" style="position: relative;font-size: 0.8rem;">
+                        <span>Change language</span>
+                        <span id="arrow-down">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                    
+                        </span>
+                        <div id="lang-dropdown">
+                          <ul class="m-0 p-0 pt-2 pb-2 text-start">
+                            <a href="/en{{ request.get_full_path |slice:'3:' }}" >
+                                <li>
+                                    <span><img src="https://drive.google.com/uc?export=view&id=12MTCVdP9uAXt1GJ3j74LUgj4Oi5mdlcE" alt="gaint-plus english"></span>
+                                    <span class="ms-2">English</span>
+                                </li>
+                            </a>
+                            <a href="/ar{{ request.get_full_path |slice:'3:' }}" >
+                                <li>
+                                    <span><img src="https://drive.google.com/uc?export=view&id=1nOL9FhbsV9H21txfpbojBViFoQQ5UewE" alt="gaint-plus arabic"></span>
+                                    <span class="ms-2">Arabic</span>
+                                </li>
+                            </a>
+                        </ul>
+                        </div>
+                        </button>
                     </div>
-                    </button>
+                <!-- <div class="d-flex mt-3 justify-content-between">
+                    <div class="mt-3 me-2">
+                    <a class="stroke-btn" href="#">
+                        <span >
+                        Login
+                        </span>
+                    </a>
+                    </div>
+                    <a class="primary-btn-gp mt-3 ms-2" href="#">
+                        <span>
+                            Register
+                        </span>
+                    </a>
+                </div> -->
                 </div>
-            <!-- <div class="d-flex mt-3 justify-content-between">
-                <div class="mt-3 me-2">
-                <a class="stroke-btn" href="#">
-                    <span >
-                    Login
-                    </span>
-                </a>
-                </div>
-                <a class="primary-btn-gp mt-3 ms-2" href="#">
-                    <span>
-                        Register
-                    </span>
-                </a>
-            </div> -->
             </div>
-        </div>
             
         </nav>
 

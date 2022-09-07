@@ -564,7 +564,7 @@ nav#mobile-navbar{
 .products,.service{
     /* width: 100%; */
     background-color: unset;
-    background: linear-gradient(180deg, #DF3DD6 -8.18%, #3AD3D9 35.45%, rgba(58, 211, 217, 0) 78.59%);
+    background: linear-gradient(180deg, rgba(223, 61, 214, 0.5) -8.18%, rgba(58, 211, 217, 0.5) 35.45%, rgba(58, 211, 217, 0) 78.59%);
     border-radius: unset;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -1285,7 +1285,7 @@ footer{
     #work-sec-img{
         display: block;
     }
-    #our-work::after{
+    /* #our-work::after{
       content: '';
       position: absolute;
       width: 100%;
@@ -1295,14 +1295,14 @@ footer{
       background: var(--border);
       z-index: -5;
       box-shadow: 0 -10px 20px #d167cb;
-    }
-    #our-work{
+    } */
+    /* #our-work{
         margin-top: 200px;
-    }
-    #our-work .row{
+    } */
+    /* #our-work .row{
         position: relative;
         top: -100px;
-    }
+    } */
     .social-icons .d-flex{
         justify-content: center;
     }

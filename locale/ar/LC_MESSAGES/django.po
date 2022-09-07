@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 12:14+0530\n"
+"POT-Creation-Date: 2022-09-07 10:48+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr "الرئيسية"
 #: .\website\templates\website\base.html:86
 #: .\website\templates\website\base.html:158
 #: .\website\templates\website\base.html:263
-#: .\website\templates\website\index.html:691
+#: .\website\templates\website\index.html:541
 msgid "Our Services"
 msgstr "خدماتنا"
 
@@ -46,7 +46,7 @@ msgstr "منتجات"
 
 #: .\website\templates\website\base.html:88
 #: .\website\templates\website\base.html:160
-#: .\website\templates\website\index.html:1061
+#: .\website\templates\website\index.html:903
 msgid "Our Work"
 msgstr "اعمالنا"
 
@@ -125,74 +125,63 @@ msgstr ""
 "النزلاء وتنفيذها حسب الطلب وكذلك ركن قهوة ولوحات مفاتيح وماوسات خاصة والمزيد "
 "نقدم الاستشارات الفنية"
 
-#: .\website\templates\website\index.html:542
-#: .\website\templates\website\products.html:18
-msgid "Our Products"
-msgstr "منتجاتنا"
-
-#: .\website\templates\website\index.html:555
-#: .\website\templates\website\index.html:597
-#: .\website\templates\website\index.html:639
-#: .\website\templates\website\index.html:706
+#: .\website\templates\website\index.html:556
 msgid "Professional Setup Design"
-msgstr "تصميم الإعداد الاحترافي"
+msgstr "تصميم سيت اب احترافي"
 
-#: .\website\templates\website\index.html:577
-#: .\website\templates\website\index.html:619
-#: .\website\templates\website\index.html:661
-#: .\website\templates\website\index.html:740
-#: .\website\templates\website\index.html:794
-#: .\website\templates\website\index.html:848
-#: .\website\templates\website\products.html:70
-#: .\website\templates\website\products.html:117
-#: .\website\templates\website\products.html:164
-msgid "Buy now"
-msgstr "اشتري الآن"
-
-#: .\website\templates\website\index.html:675
-#: .\website\templates\website\products.html:178
-msgid "Get Quote"
-msgstr "الحصول على الاقتباس"
-
-#: .\website\templates\website\index.html:711
-#: .\website\templates\website\index.html:765
-#: .\website\templates\website\index.html:819
+#: .\website\templates\website\index.html:561
+#: .\website\templates\website\index.html:615
 msgid ""
 "We can prepare a special corner for coffee in your home with a distinct "
 "character that reflects your personal taste, taking into account its fit "
 "with your home decor."
 msgstr ""
-"يمكننا تجهيز ركن خاص للقهوة في منزلك بطابع مميز يعكس ذوقك الشخصي مع مراعاة "
-"تناسبه مع ديكور منزلك."
+"نوفرّ خدمة تنفيذ وتصميم ركن قهوة خاص بك وتجهيزه بكافة المستلزمات، بجودة عالية "
+"فالمنطقة الغربية"
 
-#: .\website\templates\website\index.html:760
+#: .\website\templates\website\index.html:589
+#: .\website\templates\website\index.html:643
+#: .\website\templates\website\index.html:697
+#: .\website\templates\website\products.html:70
+#: .\website\templates\website\products.html:118
+#: .\website\templates\website\products.html:168
+msgid "Buy now"
+msgstr "اشتري الآن"
+
+#: .\website\templates\website\index.html:610
 msgid "Coffee Corner Design"
-msgstr "تصميم ركن القهوة"
+msgstr "تجهيز ركن القهوة في منزلك"
 
-#: .\website\templates\website\index.html:814
+#: .\website\templates\website\index.html:664
 msgid "Implementation of the Set"
-msgstr "تنفيذ السيت اب"
+msgstr "تنفيذ السيت أب:"
 
-#: .\website\templates\website\index.html:882
-#: .\website\templates\website\products.html:190
+#: .\website\templates\website\index.html:669
+msgid ""
+"Executing perfect decorations, installing high-quality lighting, in addition "
+"to attractive parquet floors, with smart room control furniture."
+msgstr "تنفيذ ديكورات مثالية، وتركيب الإضاءة بجودة عالية، بالإضافة إلى أرضيات الباركية الجذابة، مع أثاث التحكّم الذكي بالغرفة."
+
+#: .\website\templates\website\index.html:724
+#: .\website\templates\website\products.html:195
 msgid "Loved our products!"
 msgstr "أحببت منتجاتنا!"
 
-#: .\website\templates\website\index.html:883
-#: .\website\templates\website\products.html:191
+#: .\website\templates\website\index.html:725
+#: .\website\templates\website\products.html:196
 msgid "Want to know how you can get these beautiful designs?"
 msgstr "هل تريد أن تعرف كيف يمكنك الحصول على هذه التصاميم الجميلة؟"
 
-#: .\website\templates\website\index.html:886
-#: .\website\templates\website\products.html:194
+#: .\website\templates\website\index.html:728
+#: .\website\templates\website\products.html:199
 msgid "View guide"
 msgstr "عرض الدليل"
 
-#: .\website\templates\website\index.html:904
+#: .\website\templates\website\index.html:746
 msgid "Advantages of Buying a Design"
 msgstr "مزايا شراء التصميم"
 
-#: .\website\templates\website\index.html:909
+#: .\website\templates\website\index.html:751
 #: .\website\templates\website\products.html:20
 msgid ""
 "Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten "
@@ -200,88 +189,88 @@ msgid ""
 "Supraryvona frågestrejka, maliga och gigast. "
 msgstr ""
 
-#: .\website\templates\website\index.html:927
+#: .\website\templates\website\index.html:769
 msgid "Real view"
 msgstr "منظر حقيقي"
 
-#: .\website\templates\website\index.html:930
+#: .\website\templates\website\index.html:772
 msgid "It gives you a view of the place and see it as if it were real."
 msgstr "يمنحك منظرًا للمكان ورؤيته كما لو كان حقيقيًا."
 
-#: .\website\templates\website\index.html:945
+#: .\website\templates\website\index.html:787
 msgid "Experience in VR"
 msgstr "خبرة في الواقع الافتراضي"
 
-#: .\website\templates\website\index.html:948
+#: .\website\templates\website\index.html:790
 msgid "Live the virtual reality of your room before you build it."
 msgstr "عش الواقع الافتراضي لغرفتك قبل أن تبنيها."
 
-#: .\website\templates\website\index.html:962
+#: .\website\templates\website\index.html:804
 msgid "Get Full clarity"
 msgstr "احصل على الوضوح الكامل"
 
-#: .\website\templates\website\index.html:965
+#: .\website\templates\website\index.html:807
 msgid ""
 "It includes the clarity of furniture, lighting and colors from inside the "
 "room."
 msgstr "يشمل صفاء الأثاث والإضاءة والألوان من داخل الغرفة."
 
-#: .\website\templates\website\index.html:992
+#: .\website\templates\website\index.html:834
 msgid "Check Products"
 msgstr "تحقق من المنتجات"
 
-#: .\website\templates\website\index.html:995
+#: .\website\templates\website\index.html:837
 msgid "Includes adding real products from their original source with a link."
 msgstr "يتضمن إضافة منتجات حقيقية من مصدرها الأصلي مع رابط."
 
-#: .\website\templates\website\index.html:1009
+#: .\website\templates\website\index.html:851
 msgid "HD Results"
 msgstr "نتائج عالية الدقة"
 
-#: .\website\templates\website\index.html:1012
+#: .\website\templates\website\index.html:854
 msgid "High-quality images of designs with clear details."
 msgstr "صور عالية الجودة للتصميمات بتفاصيل واضحة."
 
-#: .\website\templates\website\index.html:1026
+#: .\website\templates\website\index.html:868
 msgid "Affordable"
-msgstr "ميسور"
+msgstr "ميزانية العميل"
 
-#: .\website\templates\website\index.html:1029
+#: .\website\templates\website\index.html:871
 msgid "Our designs that fit your budget to avoid future mistakes."
 msgstr "تصميماتنا تناسب ميزانيتك لتجنب الأخطاء المستقبلية."
 
-#: .\website\templates\website\index.html:1066
+#: .\website\templates\website\index.html:908
 msgid ""
 "Lörem ipsum ultranat jaras. Rehet båligen fynämist gigagt, masans. Teten "
 "vasa har post-it-krig logotris ponde. Vagt nes epiktig, sofament. "
 "Supraryvona frågestrejka, maliga och gigast."
 msgstr ""
 
-#: .\website\templates\website\index.html:1142
+#: .\website\templates\website\index.html:984
 msgid "Contact With Us"
 msgstr "اتصل بنا"
 
-#: .\website\templates\website\index.html:1201
+#: .\website\templates\website\index.html:1043
 msgid "Name"
 msgstr "اسم"
 
-#: .\website\templates\website\index.html:1208
+#: .\website\templates\website\index.html:1050
 msgid "Email"
 msgstr "البريد الإلكتروني"
 
-#: .\website\templates\website\index.html:1214
+#: .\website\templates\website\index.html:1056
 msgid "Number"
 msgstr "رقم"
 
-#: .\website\templates\website\index.html:1221
+#: .\website\templates\website\index.html:1063
 msgid "Subject"
 msgstr "موضوعات"
 
-#: .\website\templates\website\index.html:1225
+#: .\website\templates\website\index.html:1067
 msgid "Message"
 msgstr "رسالة"
 
-#: .\website\templates\website\index.html:1227
+#: .\website\templates\website\index.html:1069
 msgid "Submit"
 msgstr "يُقدِّم"
 
@@ -289,6 +278,10 @@ msgstr "يُقدِّم"
 #: .\website\templates\website\notFound.html:346
 msgid "Page not found"
 msgstr "الصفحة غير موجودة"
+
+#: .\website\templates\website\products.html:18
+msgid "Our Products"
+msgstr "منتجاتنا"
 
 #: .\website\templates\website\products.html:43
 msgid "Room Design"
@@ -298,10 +291,14 @@ msgstr "تصميم الغرفة"
 msgid "Gaming Table"
 msgstr "طاولة قيمنق"
 
-#: .\website\templates\website\products.html:138
+#: .\website\templates\website\products.html:140
 #, fuzzy
 msgid "Gaming Mouse"
 msgstr "ماوس قيمنق"
+
+#: .\website\templates\website\products.html:183
+msgid "Get Quote"
+msgstr "الحصول على الاقتباس"
 
 #~ msgid "Home"
 #~ msgstr "مسكن"
