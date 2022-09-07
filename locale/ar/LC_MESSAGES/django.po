@@ -292,7 +292,6 @@ msgid "Gaming Table"
 msgstr "طاولة قيمنق"
 
 #: .\website\templates\website\products.html:140
-#, fuzzy
 msgid "Gaming Mouse"
 msgstr "ماوس قيمنق"
 
