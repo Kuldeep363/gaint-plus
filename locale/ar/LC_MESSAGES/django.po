@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-07 10:48+0530\n"
+"POT-Creation-Date: 2022-09-07 11:47+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -130,14 +130,10 @@ msgid "Professional Setup Design"
 msgstr "تصميم سيت اب احترافي"
 
 #: .\website\templates\website\index.html:561
-#: .\website\templates\website\index.html:615
 msgid ""
-"We can prepare a special corner for coffee in your home with a distinct "
-"character that reflects your personal taste, taking into account its fit "
-"with your home decor."
-msgstr ""
-"نوفرّ خدمة تنفيذ وتصميم ركن قهوة خاص بك وتجهيزه بكافة المستلزمات، بجودة عالية "
-"فالمنطقة الغربية"
+"Create a professional set-up design from scratch, starting with the design, "
+"passing through the PC, storage solutions, arranging wires, and others"
+msgstr "انشاء تصميم سيت اب احترافي من الصفر ابتدا من التصميم ومرورا بجهاز البي سي وحلول التخزين وترتيب الاسلاك وغيرها"
 
 #: .\website\templates\website\index.html:589
 #: .\website\templates\website\index.html:643
@@ -152,6 +148,15 @@ msgstr "اشتري الآن"
 msgid "Coffee Corner Design"
 msgstr "تجهيز ركن القهوة في منزلك"
 
+#: .\website\templates\website\index.html:615
+msgid ""
+"We can prepare a special corner for coffee in your home with a distinct "
+"character that reflects your personal taste, taking into account its fit "
+"with your home decor."
+msgstr ""
+"نوفرّ خدمة تنفيذ وتصميم ركن قهوة خاص بك وتجهيزه بكافة المستلزمات، بجودة عالية "
+"فالمنطقة الغربية"
+
 #: .\website\templates\website\index.html:664
 msgid "Implementation of the Set"
 msgstr "تنفيذ السيت أب:"
@@ -160,7 +165,9 @@ msgstr "تنفيذ السيت أب:"
 msgid ""
 "Executing perfect decorations, installing high-quality lighting, in addition "
 "to attractive parquet floors, with smart room control furniture."
-msgstr "تنفيذ ديكورات مثالية، وتركيب الإضاءة بجودة عالية، بالإضافة إلى أرضيات الباركية الجذابة، مع أثاث التحكّم الذكي بالغرفة."
+msgstr ""
+"تنفيذ ديكورات مثالية، وتركيب الإضاءة بجودة عالية، بالإضافة إلى أرضيات "
+"الباركية الجذابة، مع أثاث التحكّم الذكي بالغرفة."
 
 #: .\website\templates\website\index.html:724
 #: .\website\templates\website\products.html:195
