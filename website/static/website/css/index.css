@@ -27,7 +27,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: 'gp';
-    font-weight: normal;
+    font-weight: bold!important;
     color: var(--white);
 }
 
